@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impel - Catálogo</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+
+    <!-- ===== Barra de Navegação ===== -->
+    <header class="cabecalho">
+
+        <div class="barra-superior">
+
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="IMPEL" id="logo-imagem">
+            </a>
+
+            <div class="pesquisa-desktop">
+                <input type="text" placeholder="Digite o que você procura">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <button id="botao-tema" class="botao-tema" aria-label="Alternar tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <a href="lista-pedidos.html" class="botao-lista-topo">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span class="texto-lista">
+
+                    Minha Lista
+
+                </span>
+
+                <span id="contador-lista" class="contador-lista">
+
+                    0
+
+                </span>
+
+            </a>
+
+            <button class="botao-menu desktop" id="botao-menu-categorias" aria-label="Abrir categorias">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="menu-suspenso desktop" id="menu-suspenso-categorias-desktop"></div>
+            <div class="menu-suspenso" id="menu-suspenso-categorias-mobile"></div>
+
+        </div>
+
+    </header>
+
+    <header class="cabecalho-categorias">
+        <nav class="barra-navegacao">
+            <ul class="menu-navegacao" id="menu-navegacao"></ul>
+
+            <div class="mobile">
+                <div class="pesquisa-mobile">
+                    <button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <input type="text" placeholder="O que você procura?">
+
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <button class="botao-menu" id="botao-menu-mobile" aria-label="Abrir categorias">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner-principal" id="banner-principal" aria-label="Banner principal"></section>
+
+    <main class="pagina-categorias">
+
+        <div id="lista-categorias" class="lista-categorias">
+
+        </div>
+
+    </main>
+
+    <main class="pagina-categorias">
+        <section class="secao-produtos" id="todos-produtos">
+
+            <div class="container">
+                <div class="titulo-secao">
+                    <h2>Todos os Produtos</h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="grade-produtos" id="todos-produtos-lista"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- <div id="catalogo-secoes"></div>-->
+
+    <!-- ==========================================================
+     MENU LATERAL MOBILE
+========================================================== -->
+
+    <aside class="menu-lateral" id="menu-lateral">
+
+        <ul id="menu-lateral-lista"></ul>
+
+    </aside>
+
+    <div class="fundo-menu" id="fundo-menu"></div>
+    <script src="js/tema.js"></script>
+
+    <!-- ==========================================================
+     LIGHTBOX DAS IMAGENS
+========================================================== -->
+
+    <div id="lightbox">
+
+        <div class="caixa-lightbox">
+
+            <button id="fechar-lightbox">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3 class="titulo-lightbox" id="titulo-lightbox"></h3>
+
+            <div class="moldura-lightbox">
+                <img id="imagem-lightbox" src="" alt="Imagem ampliada">
+            </div>
+
+            <div class="indicadores-lightbox" id="indicadores-lightbox"></div>
+
+        </div>
+
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/tema.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lista-pedidos.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/categorias.js"></script>
+
+    <div id="modalVariacoes" class="modal-variacoes">
+
+        <div class="modal-variacoes-conteudo">
+
+            <button id="fecharModalVariacoes" class="fechar-modal">
+                ✕
+            </button>
+
+            <h2 id="tituloModalVariacoes"></h2>
+
+            <div class="modal-variacoes-corpo">
+
+                <!-- LADO ESQUERDO -->
+                <div class="modal-imagens">
+
+                    <div id="sliderModalVariacao" class="slider-modal"></div>
+
+                    <div id="indicadoresModalVariacao" class="indicadores-modal"></div>
+
+                </div>
+
+                <!-- LADO DIREITO -->
+                <div class="modal-info">
+
+                    <h3 id="tituloListaVariacoes" style="margin-bottom:10px;"></h3>
+
+                    <div id="listaModalVariacoes" class="lista-modal-variacoes"></div>
+
+                    <a id="botaoWhatsappVariacao" class="botao-whatsapp" target="_blank">
+
+                        Pedir no WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
