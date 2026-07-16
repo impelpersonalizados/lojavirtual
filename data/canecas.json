@@ -1,0 +1,78 @@
+[
+    {
+        "id": "CA207",
+        "ordem": 1,
+        "ativo": true,
+        "nome": "Caneca Afeto",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/lxxzphesmsukymqbpn4n.webp",
+        "preco": 38.99,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "batizado"
+        ],
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/lxxzphesmsukymqbpn4n.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/xypnf3sqbcowtifhr4nd.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [
+            {
+                "nome": "Padrinho",
+                "preco": 39,
+                "fotos": [
+                    "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/xypnf3sqbcowtifhr4nd.webp"
+                ]
+            },
+            {
+                "nome": "Madrinha",
+                "preco": 39,
+                "fotos": [
+                    "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/lxxzphesmsukymqbpn4n.webp"
+                ]
+            }
+        ],
+        "tituloVariacoes": "Genero",
+        "mensagemWhatsapp": "Olá! Gostaria de pedir uma {produto} {opcao} ({id})"
+    },
+    {
+        "id": "CA154",
+        "ordem": 2,
+        "ativo": true,
+        "nome": "Caneca Pezinho",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/gy6agl8fqtcl93jiuna7.webp",
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "batizado"
+        ],
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/gy6agl8fqtcl93jiuna7.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "Genero",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "CA163",
+        "ordem": 3,
+        "ativo": true,
+        "nome": "Caneca Padrinho",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/l63jhbf6v0dgq8z00yvr.webp",
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "batizado"
+        ],
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784045255/produtos/l63jhbf6v0dgq8z00yvr.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "Genero",
+        "mensagemWhatsapp": ""
+    }
+]

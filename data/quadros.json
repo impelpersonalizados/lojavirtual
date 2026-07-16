@@ -1,0 +1,20 @@
+[
+    {
+        "id": "QU038",
+        "nome": "Quadro Familia Abençoada",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033645/produtos/ptulqifjupkk2j6upekf.jpg",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "familia"
+        ],
+        "ativo": true,
+        "ordem": 1,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033645/produtos/ptulqifjupkk2j6upekf.jpg"
+        ],
+        "mostrarPreco": true,
+        "variacoes": []
+    }
+]

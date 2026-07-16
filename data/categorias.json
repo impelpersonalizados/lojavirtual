@@ -1,0 +1,37 @@
+[
+    {
+        "id": "canecas",
+        "nome": "Copos e Canecas",
+        "ativo": true,
+        "ordem": 1,
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033668/produtos/cv3chl4kcmbsxpqsxfzi.jpg"
+    },
+    {
+        "id": "quadros",
+        "nome": "Quadros e Placas",
+        "ativo": true,
+        "ordem": 2,
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033657/produtos/av47qddjr62zqbvagxt6.jpg"
+    },
+    {
+        "id": "chaveirosebrindes",
+        "nome": "Chaveiros e Brindes",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033645/produtos/ptulqifjupkk2j6upekf.jpg",
+        "ativo": true,
+        "ordem": 3
+    },
+    {
+        "id": "agendas e cadernos",
+        "nome": "Agendas e Cadernos",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033646/produtos/mffxoffkpu0wc0y6f2fp.jpg",
+        "ativo": true,
+        "ordem": 4
+    },
+    {
+        "id": "kits personalizados",
+        "nome": "Kits Personalizados",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033646/produtos/mffxoffkpu0wc0y6f2fp.jpg",
+        "ativo": true,
+        "ordem": 5
+    }
+]

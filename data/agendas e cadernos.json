@@ -1,0 +1,21 @@
+[
+    {
+        "id": "AG105",
+        "ordem": 1,
+        "ativo": true,
+        "nome": "Agenda Floral Rosa",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033648/produtos/uqtjp5p9jmgrrnxspkec.jpg",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033648/produtos/uqtjp5p9jmgrrnxspkec.jpg"
+        ],
+        "preco": 69,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos"
+        ],
+        "variacoes": [],
+        "mostrarPreco": true,
+        "tituloVariacoes": "Modelos de Miolo",
+        "mensagemWhatsapp": "Olá, Gostaria de Pedir uma {produto} {opcao} ( {id})"
+    }
+]

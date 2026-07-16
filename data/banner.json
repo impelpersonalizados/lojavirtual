@@ -1,0 +1,44 @@
+{
+    "desktop": {
+        "titulo": "Novidades chegando na Impel",
+        "texto": "Descubra produtos personalizados com estilo, qualidade e destaque para o seu dia a dia.",
+        "mostrarTexto": false,
+        "imagem": "",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033657/produtos/tbqzpqtskysm4xd84fdq.jpg"
+        ],
+        "slides": [
+            {
+                "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033657/produtos/tbqzpqtskysm4xd84fdq.jpg",
+                "link": "index.html?busca=Dia%20dos%20Pais",
+                "texto": ""
+            }
+        ],
+        "link": "#produto-1",
+        "produtoId": ""
+    },
+    "mobile": {
+        "titulo": "",
+        "texto": "",
+        "mostrarTexto": false,
+        "imagem": "",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033649/produtos/pnu4iqpzgijzp0xqcacr.png"
+        ],
+        "slides": [
+            {
+                "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784033649/produtos/pnu4iqpzgijzp0xqcacr.png",
+                "link": "index.html?busca=Dia%20dos%20Pais",
+                "texto": ""
+            }
+        ],
+        "link": "#produto-CA024",
+        "produtoId": ""
+    },
+    "titulo": "Novidades chegando na Impel",
+    "texto": "Descubra produtos personalizados com estilo, qualidade e destaque para o seu dia a dia.",
+    "mostrarTexto": false,
+    "imagem": "",
+    "link": "#produto-1",
+    "produtoId": ""
+}
