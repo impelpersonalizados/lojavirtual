@@ -1,0 +1,580 @@
+/* ##########################################################
+   ## CARD PRODUTO
+########################################################## */
+
+
+.cartao-produto {
+
+    min-width: 220px;
+    background: var(--cor-card);
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: var(--sombra-media);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s;
+
+}
+
+.cartao-produto:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ##########################################################
+   ## IMAGEM
+########################################################## */
+
+.imagem-produto {
+
+    position: relative;
+
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+    background: var(--cor-fundo-secundario);
+
+    cursor: pointer;
+
+}
+
+.imagem-produto img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* ##########################################################
+   ## INFORMAÇÕES
+########################################################## */
+
+.informacoes-produto {
+
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 8px 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.informacoes-produto h3 {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    line-height: 1.35;
+
+    letter-spacing: -0.03em;
+
+    color: var(--cor-texto);
+
+    text-align: center;
+
+    margin-bottom: 1px;
+
+    min-height: calc(17px * 1.35 * 2);
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    word-break: break-word;
+
+}
+
+
+
+/* ##########################################################
+   ## AVALIAÇÃO
+########################################################## */
+
+.avaliacao {
+
+    color: var(--cor-avaliacao);
+
+    font-size: 20px;
+
+    letter-spacing: 2px;
+
+    margin-top: -5px;
+
+    margin-bottom: -5px;
+
+    text-align: center;
+
+}
+
+
+/* ##########################################################
+   ## PREÇO
+########################################################## */
+
+.a-partir-de {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: var(--cor-texto-claro);
+
+    margin-bottom: -2px;
+
+}
+
+.preco {
+
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+
+}
+
+
+
+.preco .moeda {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: var(--cor-secundaria);
+
+    margin-right: -5px;
+
+}
+
+.preco .valor {
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    color: var(--cor-secundaria);
+
+}
+
+.preco .centavos {
+
+    font-size: 14px;
+
+    vertical-align: super;
+
+    font-weight: 900;
+
+    margin-left: -5px;
+
+    position: relative;
+    top: -15px;
+
+    color: var(--cor-secundaria);
+
+}
+
+/* ##########################################################
+   ## Css do Id
+########################################################## */
+
+.produto-id {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: var(--cor-texto-claro);
+
+    margin-top: 0px;
+
+    margin-bottom: 0px;
+
+    text-align: center;
+
+    letter-spacing: .5px;
+
+}
+
+/* ##########################################################
+   ## BOTÃO
+########################################################## */
+
+.informacoes-produto button,
+.informacoes-produto .botao-whatsapp {
+
+    width: 100%;
+    height: 44px;
+    border-radius: 5px 5px 15px 15px;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    color: var(--cor-branco);
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+
+}
+
+.banner-principal {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-principal .banner-item {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.banner-principal .banner-conteudo {
+    padding: 32px;
+    color: var(--cor-texto-gradiente);
+}
+
+.banner-principal .banner-conteudo h2 {
+    font-size: 32px;
+    margin: 0 0 10px;
+}
+
+.banner-principal .banner-conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+    opacity: 0.95;
+}
+
+.banner-principal .banner-imagem {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    overflow: hidden;
+}
+
+.banner-principal .banner-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-principal .banner-item.sem-texto {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
+.banner-principal .banner-item.sem-texto .banner-conteudo {
+    display: none;
+}
+
+.banner-principal .banner-item.sem-texto .banner-imagem {
+    min-height: 320px;
+}
+
+@media (max-width: 900px) {
+    .banner-principal .banner-item.sem-texto .banner-imagem {
+        min-height: 500px;
+    }
+
+    .banner-principal .banner-item {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-principal .banner-imagem {
+        min-height: 220px;
+    }
+
+    .banner-principal .banner-conteudo {
+        padding: 24px;
+    }
+}
+
+/* ==========================================================
+   LIGHTBOX
+========================================================== */
+#lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: var(--cor-overlay-forte);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s;
+
+    z-index: 99999;
+
+}
+
+#lightbox.ativo {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+.caixa-lightbox {
+
+    position: relative;
+
+    width: min(480px, 92vw);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 28px 24px 24px;
+
+    background: var(--cor-card);
+
+    border-radius: 18px;
+
+    transform: scale(.92);
+
+    transition: .35s;
+
+    box-shadow: var(--sombra-lightbox);
+
+}
+
+#lightbox.ativo .caixa-lightbox {
+
+    transform: scale(1);
+
+}
+
+.titulo-lightbox {
+
+    color: var(--cor-texto);
+
+    font-size: 17px;
+
+    text-align: center;
+
+    padding-right: 36px;
+
+    width: 100%;
+
+}
+
+.moldura-lightbox {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255, 255, 255, .06);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+}
+
+#imagem-lightbox {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+#fechar-lightbox {
+
+    position: absolute;
+
+    top: 23px;
+
+    right: 14px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    backdrop-filter: blur(8px);
+
+    color: var(--cor-texto);
+
+    font-size: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .25s;
+
+    z-index: 2;
+
+}
+
+#fechar-lightbox:hover {
+
+    background: var(--cor-lightbox-botao-hover);
+
+    transform: rotate(90deg);
+
+}
+
+.indicadores-lightbox {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    width: 100%;
+
+}
+
+.indicadores-lightbox img {
+
+    width: 52px;
+
+    height: 52px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    border: 2px solid transparent;
+
+    cursor: pointer;
+
+    opacity: .55;
+
+    transition: .2s;
+
+}
+
+.indicadores-lightbox img:hover {
+
+    opacity: .85;
+
+}
+
+.indicadores-lightbox img.ativo {
+
+    opacity: 1;
+
+    border-color: var(--cor-primaria);
+
+}
+
+.banner-principal .banner-slides {
+    position: relative;
+}
+
+.banner-principal .banner-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .7s ease;
+}
+
+.banner-principal .banner-slide.ativo {
+    opacity: 1;
+}
+
+.banner-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.banner-indicadores span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cor-indicador-inativo);
+    transition: .25s;
+}
+
+.banner-indicadores span.ativo {
+    width: 22px;
+    border-radius: 99px;
+    background: var(--cor-primaria);
+}

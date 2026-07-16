@@ -1,0 +1,107 @@
+/* ==========================================================
+   BARRA DE NAVEGAÇÃO
+========================================================== */
+
+.barra-navegacao {
+
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px 30px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    border-top: 1px solid var(--cor-menu-borda);
+    box-shadow: inset 0 1px 0 var(--cor-menu-luz);
+
+    transform: translateY(-12px);
+
+    transition: max-height .4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity .35s cubic-bezier(0.4, 0, 0.2, 1),
+        transform .4s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.barra-navegacao.ativo {
+
+    max-height: 150px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+
+}
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+.menu-navegacao {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+.menu-navegacao a {
+
+    position: relative;
+
+    color: var(--cor-branco);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: var(--transicao);
+
+}
+
+
+.menu-navegacao a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--cor-branco);
+
+    transform: translateX(-50%);
+
+    transition: var(--transicao);
+
+}
+
+
+.menu-navegacao a:hover::after {
+
+    width: 100%;
+
+}
+
+
+.menu-navegacao a.ativo::after {
+
+    width: 100%;
+
+}

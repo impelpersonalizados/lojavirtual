@@ -1,0 +1,391 @@
+/* ==========================================================
+   CABEÇALHO
+========================================================== */
+
+.cabecalho {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--cor-superficie);
+    box-shadow: var(--sombra-leve);
+
+}
+
+.cabecalho-categorias {
+
+    width: 100%;
+    background: var(--cor-superficie);
+    border-top: 1px solid var(--cor-borda);
+
+}
+
+/* ==========================================================
+   BARRA SUPERIOR
+========================================================== */
+
+.barra-superior {
+
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    min-height: 90px;
+    margin: 0;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--cor-borda);
+
+}
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.logo {
+
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+
+}
+
+.logo img {
+
+    height: 58px;
+    width: auto;
+
+}
+
+/* ==========================================================
+   PESQUISA DESKTOP
+========================================================== */
+
+.pesquisa-desktop {
+
+    flex: 1 1 420px;
+    max-width: 720px;
+    min-width: 220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: var(--cor-fundo-secundario);
+    border-radius: var(--raio-redondo);
+    transition: var(--transicao);
+
+}
+
+
+.pesquisa-desktop:focus-within {
+
+    box-shadow: var(--sombra-leve);
+
+}
+
+
+.pesquisa-desktop input {
+
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--cor-texto);
+
+    font-size: 16px;
+
+
+}
+
+.pesquisa-desktop input::placeholder {
+
+    color: var(--cor-texto-claro);
+
+}
+
+
+.pesquisa-desktop button {
+
+    color: var(--cor-primaria);
+
+    font-size: 22px;
+
+}
+
+.botao-menu.desktop {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--cor-fundo-secundario);
+    color: var(--cor-primaria);
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity var(--transicao) ease,
+        visibility var(--transicao) ease;
+
+}
+
+.botao-menu.desktop.ativo {
+
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.menu-suspenso.desktop {
+
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 30px;
+    min-width: 220px;
+    background: var(--cor-superficie);
+    border-radius: 12px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: var(--sombra-media);
+    padding: 10px 0;
+    display: none;
+    z-index: 1100;
+
+}
+
+.menu-suspenso.desktop.ativo {
+
+    display: block;
+
+}
+
+.menu-suspenso.desktop a {
+
+    display: block;
+    padding: 12px 18px;
+    color: var(--cor-primaria);
+    font-weight: 600;
+
+}
+
+.menu-suspenso.desktop a:hover {
+
+    background: var(--cor-fundo-secundario);
+
+}
+
+/* ==========================================================
+   BOTÃO TEMA
+========================================================== */
+@media (min-width: 769px) {
+    .botao-tema {
+
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--cor-fundo-secundario);
+
+        color: var(--cor-primaria);
+
+        transition: var(--transicao);
+
+    }
+}
+
+@media(max-width:900px) {
+    .botao-tema {
+
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--cor-fundo-secundario);
+
+        color: var(--cor-primaria);
+
+        transition: var(--transicao);
+
+    }
+}
+
+.botao-tema:hover {
+
+    transform: scale(1.08);
+
+}
+
+.botao-tema i {
+
+    font-size: 20px;
+
+}
+
+/* ==========================================================
+   LISTA DE PEDIDOS
+========================================================== */
+
+.botao-lista-topo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 18px;
+
+    height: 50px;
+
+    border-radius: 999px;
+
+    background: var(--cor-fundo-secundario);
+
+    color: var(--cor-texto);
+
+    font-weight: 600;
+
+    transition: .25s;
+
+    position: relative;
+
+}
+
+.botao-lista-topo:hover {
+
+    transform: translateY(-2px);
+
+}
+
+.botao-lista-topo i {
+
+    color: #e53935;
+
+    font-size: 20px;
+
+}
+
+.contador-lista {
+
+    min-width: 24px;
+
+    height: 24px;
+
+    border-radius: 50%;
+
+    background: #e53935;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: .25s;
+
+}
+
+.contador-lista.pulse {
+
+    animation: pulseLista .35s;
+
+}
+
+@keyframes pulseLista {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.35);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .texto-lista {
+        display: none;
+    }
+
+    .botao-lista-topo {
+
+        width: 44px;
+        height: 44px;
+
+        padding: 0;
+
+        border-radius: var(--raio-grande);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+    }
+
+    .botao-lista-topo i {
+
+        font-size: 18px;
+
+    }
+
+    .contador-lista {
+
+        position: absolute;
+
+        top: -5px;
+        right: -5px;
+
+        width: 18px;
+        height: 18px;
+
+        font-size: 10px;
+
+    }
+
+}

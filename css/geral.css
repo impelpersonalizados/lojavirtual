@@ -1,0 +1,45 @@
+/* ==========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================== */
+
+body{
+
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--cor-fundo);
+    color:var(--cor-texto);
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+button{
+
+    border:none;
+    background:none;
+    cursor:pointer;
+
+}
+
+input{
+
+    font:inherit;
+
+}

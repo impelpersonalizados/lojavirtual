@@ -1,0 +1,119 @@
+/* ##########################################################
+   ## PÁGINA CATEGORIA - PRODUTOS
+########################################################## */
+
+
+.lista-produtos-categoria {
+
+    max-width: var(--largura-site);
+
+    margin: auto;
+
+    padding: 40px 20px;
+
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 240px);
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+
+/* ##########################################################
+   ## PC
+########################################################## */
+
+
+@media(max-width:1300px) {
+
+    .lista-produtos-categoria {
+
+        grid-template-columns: repeat(4, 240px);
+
+    }
+
+}
+
+
+
+@media(max-width:1100px) {
+
+    .lista-produtos-categoria {
+
+        grid-template-columns: repeat(3, 240px);
+
+    }
+
+}
+
+
+
+@media(max-width:850px) {
+
+    .lista-produtos-categoria {
+
+        grid-template-columns: repeat(2, 240px);
+
+    }
+
+}
+
+
+
+/* ##########################################################
+   ## CELULAR
+########################################################## */
+
+
+@media(max-width:768px) {
+
+
+    .lista-produtos-categoria {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+
+        padding: 25px 15px;
+
+    }
+
+
+
+    .cartao-produto {
+
+        min-width: 0;
+
+    }
+
+
+
+    .imagem-produto {
+
+        aspect-ratio: 1;
+
+    }
+
+
+
+    .informacoes-produto h3 {
+
+        font-size: 15px;
+
+    }
+
+
+
+    .preco .valor {
+
+        font-size: 28px;
+
+    }
+
+
+}

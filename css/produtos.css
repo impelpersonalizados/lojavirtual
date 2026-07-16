@@ -1,0 +1,718 @@
+/* ##########################################################
+   ## SEÇÃO DE PRODUTOS
+########################################################## */
+
+.secao-produtos {
+
+    padding: 0px 0;
+
+    background: var(--cor-fundo);
+
+}
+
+.container {
+
+    max-width: var(--largura-site);
+
+    margin: auto;
+
+}
+
+
+/* ##########################################################
+   ## TÍTULO
+########################################################## */
+
+.titulo-secao {
+
+    margin-top: 5px;
+
+    text-align: center;
+
+    margin-bottom: 5px;
+
+}
+
+.titulo-secao h2 {
+
+    font-size: 42px;
+
+    color: var(--cor-texto);
+
+}
+
+@media (max-width: 768px) {
+
+    .titulo-secao h2 {
+
+        font-size: 33px;
+
+        color: var(--cor-texto);
+
+    }
+}
+
+.titulo-secao-categorias h1 {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+
+    font-size: 42px;
+
+    color: var(--cor-texto);
+
+}
+
+.titulo-secao-categorias h2 {
+
+    font-size: 20px;
+
+    padding-right: 10px;
+
+    color: var(--cor-texto);
+
+}
+
+.filtros-temas-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filtros-temas-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* ##########################################################
+   ## CARROSSEL
+########################################################## */
+
+.carrossel-produtos {
+    position: relative;
+    width: 100%;
+}
+
+
+/* ##########################################################
+   ## BOTÕES
+########################################################## */
+
+.botao-carrossel {
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: var(--cor-card);
+
+    box-shadow: var(--sombra-media);
+
+    color: var(--cor-primaria);
+
+    font-size: 22px;
+
+}
+
+
+/* ##########################################################
+   ## LISTA
+########################################################## */
+
+.lista-produtos {
+
+    flex: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+/* ==========================================================
+   CARROSSEL DE PRODUTOS
+========================================================== */
+
+.carrossel-produtos {
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+/* Área que desliza */
+
+.area-carrossel {
+
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scroll-padding-inline: calc(50% - 120px);
+
+    padding: 30px 100px;
+
+    position: relative;
+
+}
+
+@media (max-width: 768px) {
+    .area-carrossel {
+        mask-image: linear-gradient(to right,
+                transparent 0%,
+                black 8%,
+                black 92%,
+                transparent 100%);
+
+        -webkit-mask-image: linear-gradient(to right,
+                transparent 0%,
+                black 8%,
+                black 92%,
+                transparent 100%);
+
+    }
+}
+
+.area-carrossel .cartao-produto {
+
+    flex: 0 0 240px;
+    scroll-snap-align: center;
+
+}
+
+
+/* Esconde scrollbar */
+
+.area-carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Botões */
+
+.botao-carrossel {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background: var(--cor-card);
+
+    box-shadow: var(--sombra-media);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--cor-primaria);
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    z-index: 30;
+
+}
+
+.botao-carrossel:hover {
+
+    transform: translateY(-50%) scale(1.08);
+
+}
+
+.botao-carrossel.anterior {
+
+    left: -22px;
+
+}
+
+.botao-carrossel.proximo {
+
+    right: -22px;
+
+}
+
+/* ==========================================================
+   DESKTOP
+========================================================== */
+
+@media (min-width: 769px) {
+
+    .carrossel-produtos {
+
+        position: relative;
+
+    }
+
+    .area-carrossel {
+        width: 100%;
+        padding: 30px 100px;
+    }
+
+    .botao-carrossel {
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+
+    }
+
+    .botao-carrossel:hover {
+
+        transform: translateY(-50%) scale(1.08);
+
+    }
+
+    .botao-carrossel.anterior {
+        left: 20px;
+    }
+
+    .botao-carrossel.proximo {
+        right: 20px;
+    }
+
+}
+
+/*#corrossel no celulas*/
+
+@media (max-width: 768px) {
+
+    .carrossel-produtos {
+        position: relative;
+        display: block;
+    }
+
+    .area-carrossel {
+        display: flex;
+        gap: 20px;
+
+        overflow-x: auto;
+        scroll-behavior: smooth;
+
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: calc(50% - 120px);
+    }
+
+    .area-carrossel .cartao-produto {
+        flex: 0 0 240px;
+        /* mantém a largura original */
+        scroll-snap-align: center;
+    }
+
+    .botao-carrossel {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+    }
+
+    .botao-carrossel.anterior {
+        left: 8px;
+    }
+
+    .botao-carrossel.proximo {
+        right: 8px;
+    }
+
+}
+
+/* ##########################################################
+   ## BOTÃO DO CARROSSEL DESABILITADO (fim/início no desktop)
+########################################################## */
+
+.botao-carrossel.desabilitado {
+    opacity: 0.35;
+    cursor: default;
+    pointer-events: none;
+}
+
+.resultados-busca-global {
+
+    max-width: var(--largura-site);
+    margin: 30px auto;
+    padding: 0 20px;
+
+}
+
+.resultados-busca-global h2,
+.resultados-busca-global p {
+
+    text-align: center;
+    color: var(--cor-texto);
+
+}
+
+.resultados-busca-global p {
+
+    margin-top: 8px;
+
+}
+
+/* ==========================================================
+   SEÇÃO DE RECOMENDAÇÕES DE BUSCA
+========================================================== */
+
+.recomendados-secao {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--cor-borda);
+}
+
+.recomendacoes-busca-global {
+    max-width: var(--largura-site);
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.titulo-recomendados {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-recomendados h2 {
+    font-size: 36px;
+    color: var(--cor-texto);
+}
+
+/* ==========================================================
+   GALERIA DOS PRODUTOS
+========================================================== */
+
+.imagem-produto {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+}
+
+.slider-produto {
+
+    width: 100%;
+
+    height: 100%;
+
+    position: relative;
+
+}
+
+.slide-produto {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: opacity .35s;
+
+}
+
+.slide-produto.ativo {
+
+    opacity: 1;
+
+}
+
+.indicadores-produto {
+
+    position: absolute;
+
+    bottom: 10px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 6px;
+
+    z-index: 5;
+
+}
+
+.indicadores-produto span {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--cor-dot-inativo);
+
+}
+
+.indicadores-produto span.ativo {
+
+    background: var(--cor-branco);
+
+}
+
+/* ==========================================================
+   MODAL DE VARIAÇÕES
+========================================================== */
+
+.modal-variacoes {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: var(--cor-overlay);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+
+}
+
+.modal-variacoes.aberto {
+
+    display: flex;
+
+}
+
+.modal-variacoes-conteudo {
+
+    position: relative;
+
+    width: min(980px, 95vw);
+
+    max-height: 90vh;
+
+    overflow: auto;
+
+    background: var(--cor-card);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+}
+
+.fechar-modal {
+
+    position: absolute;
+
+    margin-top: 15px;
+
+    color: var(--cor-texto);
+
+    top: 15px;
+
+    right: 15px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 22px;
+
+}
+
+#listaModalVariacoes {
+
+    display: grid;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+/* ==========================================================
+   SWIPE COM O DEDO (CELULAR) — SLIDE REAL, ACOMPANHA O DEDO
+========================================================== */
+
+@media (max-width:768px) {
+
+    .slider-produto {
+
+        display: flex;
+
+        width: 100%;
+
+        height: 100%;
+
+    }
+
+    .slide-produto {
+
+        position: static;
+
+        flex: 0 0 100%;
+
+        width: 100%;
+
+        height: 100%;
+
+        opacity: 1;
+
+    }
+
+}
+
+/* ==========================================================
+   BOTÃO LISTA DE PEDIDOS
+========================================================== */
+
+
+.acoes-produto {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+.acoes-produto .botao-whatsapp {
+
+    flex: 1;
+
+}
+
+.botao-lista {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    width: 44px;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .95);
+
+    backdrop-filter: blur(8px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow: var(--sombra-leve);
+
+    transition: .25s;
+
+    z-index: 5;
+
+}
+
+.botao-lista:hover {
+
+    transform: scale(1.08);
+
+}
+
+.botao-lista i {
+
+    font-size: 22px;
+
+    color: #e53935;
+
+    transition: .25s;
+
+}
+
+.botao-lista:hover {
+
+    transform: scale(1.12);
+
+}
+
+.botao-lista.ativo {
+
+    color: #e53935;
+
+    animation: pulseHeart .35s;
+
+}
+
+@keyframes pulseHeart {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.25);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}

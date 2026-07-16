@@ -1,0 +1,224 @@
+/* ==========================================================
+   TEMA PADRÃO (LIGHT)
+========================================================== */
+
+:root {
+
+    /* Cores principais */
+
+    --cor-primaria: #8f00d6;
+    --cor-secundaria: #660099;
+
+    /* Cores base (sempre fixas, não trocam com o tema) */
+
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+
+    /* Texto sobre elementos com gradiente primaria/secundaria
+       (no dark o gradiente vira branco, então o texto vira preto) */
+
+    --cor-texto-gradiente: var(--cor-branco);
+
+    /* Fundo */
+
+    --cor-fundo: #ffffff;
+    --cor-fundo-secundario: #f2f2f2;
+
+    /* Cards */
+
+    --cor-card: #ffffff;
+
+    /* Textos */
+
+    --cor-texto: #333333;
+    --cor-texto-claro: #777777;
+
+    /* Bordas */
+
+    --cor-borda: #e5e5e5;
+
+    /* Sombras */
+
+    --sombra-leve: 0 2px 8px rgba(0, 0, 0, .08);
+    --sombra-media: 0 6px 18px rgba(0, 0, 0, .12);
+
+    /* Bordas (raio) */
+
+    --raio-pequeno: 8px;
+    --raio-medio: 15px;
+    --raio-grande: 30px;
+    --raio-redondo: 999px;
+
+    /* Transições */
+
+    --transicao: .3s;
+
+    /* Largura */
+
+    --largura-site: 1400px;
+
+    /* Navegação */
+
+    --cor-menu-borda: rgba(255, 255, 255, .18);
+    --cor-menu-luz: rgba(255, 255, 255, .08);
+
+    /* Superfícies */
+
+    --cor-superficie: #ffffff;
+    --cor-superficie-hover: #fafafa;
+
+    /* Inputs */
+
+    --cor-input: #ffffff;
+
+    /* Overlay */
+
+    --cor-overlay: rgba(0, 0, 0, .45);
+    --cor-overlay-forte: rgba(0, 0, 0, .92);
+
+    /* Menu suspenso / lateral */
+
+    --cor-menu: #ffffff;
+
+    /* Botões claros */
+
+    --cor-botao-claro: #ffffff;
+
+    --cor-sucesso: #22a447;
+    --cor-erro: #e53935;
+
+    /* Avaliação (estrelas) */
+
+    --cor-avaliacao: #ffb400;
+
+    /* Acentos (roxo secundário usado em modais/filtros) */
+
+    --cor-acento: #9468ec;
+    --cor-acento-forte: #7c3aed;
+    --cor-acento-texto: #6f42c1;
+    --cor-acento-fundo: #f7f1ff;
+
+    /* Indicadores (bolinhas de carrossel/banner) */
+
+    --cor-indicador-inativo: #c8c8c8;
+
+    /* Lightbox (visualizador de imagem em tela cheia) */
+
+    --sombra-lightbox: 0 20px 60px rgba(0, 0, 0, .5);
+    --cor-lightbox-botao: rgba(255, 255, 255, .15);
+    --cor-lightbox-botao-hover: rgba(255, 255, 255, .28);
+    --cor-lightbox-moldura: #1c1c1e;
+
+    /* Pontos sobre foto de produto (sempre brancos, ficam sobre imagem) */
+
+    --cor-dot-inativo: rgba(255, 255, 255, .45);
+
+    /* ==========================================================
+   LISTAS / FORMULÁRIOS
+========================================================== */
+
+    --altura-input: 48px;
+
+    --espacamento-xs: 8px;
+    --espacamento-sm: 12px;
+    --espacamento-md: 20px;
+    --espacamento-lg: 30px;
+    --espacamento-xl: 45px;
+
+    --cor-input-borda: var(--cor-borda);
+    --cor-input-focus: var(--cor-primaria);
+
+    --cor-resumo: var(--cor-card);
+
+    --cor-botao-secundario: var(--cor-superficie);
+
+    --cor-hover: rgba(143, 0, 214, .08);
+
+    --cor-total: var(--cor-sucesso);
+
+}
+
+/* ==========================================================
+   TEMA DARK
+========================================================== */
+
+body.tema-dark {
+
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #ffffff;
+
+    --cor-texto-gradiente: var(--cor-preto);
+
+    --cor-fundo: #111315;
+    --cor-fundo-secundario: #444444;
+
+    --cor-branco: black;
+
+
+    --cor-card: #22252a;
+
+    --cor-texto: #f3f3f3;
+    --cor-texto-claro: #bdbdbd;
+
+    --cor-borda: #35383d;
+
+    --sombra-leve: 0 2px 10px rgba(0, 0, 0, .35);
+    --sombra-media: 0 10px 25px rgba(0, 0, 0, .45);
+
+    --cor-menu-borda: rgba(255, 255, 255, .08);
+    --cor-menu-luz: rgba(255, 255, 255, .04);
+
+    --cor-superficie: #22252a;
+    --cor-superficie-hover: #2b2f35;
+
+    --cor-input: #2b2f35;
+
+    --cor-menu: #22252a;
+
+    --cor-botao-claro: #2b2f35;
+
+    --cor-overlay: rgba(0, 0, 0, .70);
+
+    --cor-avaliacao: #ffbf00;
+
+    --cor-sucesso: #22a447;
+    --cor-erro: #e53935;
+
+    /* Acentos ficam mais claros no dark para manter contraste sobre fundo escuro */
+
+    --cor-acento: #a480f5;
+    --cor-acento-forte: #9468ec;
+    --cor-acento-texto: #b394f0;
+    --cor-acento-fundo: #3a2a5c;
+
+    --cor-indicador-inativo: #55585e;
+
+}
+
+/* ==========================================================
+   TEMA DARK - BUSCADOR
+========================================================== */
+
+body.tema-dark .pesquisa-desktop {
+    background: var(--cor-fundo-secundario);
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+body.tema-dark .pesquisa-desktop input {
+    color: var(--cor-texto);
+}
+
+body.tema-dark .pesquisa-desktop input::placeholder {
+    color: var(--cor-texto-claro);
+}
+
+body.tema-dark .pesquisa-desktop button {
+    color: var(--cor-primaria);
+}
+
+body.tema-dark .pesquisa-desktop:focus-within {
+    border-color: rgba(255, 255, 255, .55);
+    box-shadow:
+        0 0 0 3px rgba(255, 255, 255, .08),
+        var(--sombra-leve);
+}

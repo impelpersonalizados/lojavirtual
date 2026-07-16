@@ -1,0 +1,666 @@
+/* ##########################################################
+   ## CATEGORIAS - INDEX
+########################################################## */
+
+
+.pagina-categorias {
+
+    max-width: var(--largura-site);
+
+    margin: auto;
+
+    padding: 5px 20px;
+
+}
+
+
+
+/* lista */
+
+.lista-categorias {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, 260px);
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+/* ##########################################################
+   ## CARD CATEGORIA
+########################################################## */
+
+
+.card-categoria-home {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+
+    width: 100%;
+
+
+    min-height: 140px;
+
+
+    padding: 12px;
+
+
+    background: var(--cor-card);
+
+
+    border-radius: 28px;
+
+
+    border: 1px solid var(--cor-borda);
+
+
+    box-shadow: var(--sombra-media);
+
+
+    text-decoration: none;
+
+
+    overflow: hidden;
+
+
+    transition: .25s;
+
+
+}
+
+
+
+.card-categoria-home:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+
+/* alternar posição no PC */
+
+.card-categoria-home:nth-child(even) {
+
+    flex-direction: row-reverse;
+
+}
+
+
+
+/* ##########################################################
+   ## IMAGEM
+########################################################## */
+
+
+.categoria-imagem-home {
+
+    width: 260px;
+
+    height: 115px;
+
+
+    flex-shrink: 0;
+
+
+}
+
+
+
+.categoria-imagem-home img {
+
+    width: 100%;
+
+    height: 100%;
+
+
+    object-fit: cover;
+
+
+    border-radius: 20px;
+
+
+}
+
+
+
+/* ##########################################################
+   ## TEXTO
+########################################################## */
+
+
+.categoria-info-home {
+
+    flex: 1;
+
+
+    padding: 0 25px;
+
+
+}
+
+
+
+.categoria-info-home h2 {
+
+
+    font-size: 38px;
+
+
+    font-weight: 700;
+
+
+    color: var(--cor-texto);
+
+
+    line-height: 1.1;
+
+
+}
+
+
+
+.categoria-info-home span {
+
+
+    display: block;
+
+
+    margin-top: 0px;
+
+
+    font-size: 15px;
+
+
+    color: var(--cor-texto);
+
+
+}
+
+
+
+/* ##########################################################
+   ## CELULAR (NÃO ALTERADO)
+########################################################## */
+
+/* ##########################################################
+   ## PC - CARDS EM GRADE
+########################################################## */
+
+@media(min-width:769px) {
+
+
+    .card-categoria-home {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        width: 260px;
+
+
+    }
+
+
+    .card-categoria-home:nth-child(even) {
+
+        flex-direction: column;
+
+    }
+
+
+    .categoria-imagem-home {
+
+        width: 100%;
+
+        height: 170px;
+
+    }
+
+
+    .categoria-info-home {
+
+        padding: 15px 10px;
+
+    }
+
+
+    .categoria-info-home h2 {
+
+        font-size: 20px;
+
+    }
+
+
+}
+
+@media(max-width:1200px) {
+
+    .lista-categorias {
+
+        grid-template-columns: repeat(3, 260px);
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media(max-width:900px) {
+
+    .lista-categorias {
+
+        grid-template-columns: repeat(2, 260px);
+
+        justify-content: center;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+
+    .pagina-categorias {
+
+        padding: 10px 15px;
+
+    }
+
+
+
+    .card-categoria-home {
+
+
+        min-height: 100px;
+
+
+        border-radius: 22px;
+
+
+        padding: 10px;
+
+
+    }
+
+
+
+    .categoria-imagem-home {
+
+
+        width: 130px;
+
+        height: 80px;
+
+
+    }
+
+
+
+    .categoria-imagem-home img {
+
+
+        border-radius: 15px;
+
+
+    }
+
+
+
+    .categoria-info-home {
+
+
+        padding: 0 12px;
+
+
+    }
+
+
+
+    .categoria-info-home h2 {
+
+
+        font-size: 22px;
+
+
+    }
+
+
+
+    .categoria-info-home span {
+
+
+        font-size: 14px;
+
+
+    }
+
+    .lista-categorias {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 25px;
+
+    }
+
+
+}
+
+/* Css do modal*/
+
+/* ==========================================================
+   MODAL VARIAÇÕES
+========================================================== */
+
+.modal-variacoes-corpo {
+
+    display: grid;
+
+    grid-template-columns: 480px 380px;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 45px;
+
+}
+
+.modal-imagens {
+    margin-top: 15px;
+
+    width: 100%;
+
+}
+
+.slider-modal {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 480px;
+
+    aspect-ratio: 1/1;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--cor-borda);
+
+    background: var(--cor-superficie-hover);
+
+}
+
+.slider-modal img {
+
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: .25s;
+
+}
+
+.slider-modal img.ativo {
+
+    opacity: 1;
+
+}
+
+.indicadores-modal {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 10px;
+
+}
+
+.indicadores-modal img {
+
+    width: 38px;
+
+    height: 38px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    border: 2px solid var(--cor-borda);
+
+    cursor: pointer;
+
+    opacity: .65;
+
+    transition: .2s;
+
+}
+
+.indicadores-modal img:hover {
+
+    opacity: 1;
+
+}
+
+.indicadores-modal img.ativo {
+
+    border-color: var(--cor-acento-forte);
+
+    opacity: 1;
+
+}
+
+/* ==========================================================
+   LISTA DAS VARIAÇÕES
+========================================================== */
+
+.lista-modal-variacoes {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 10px;
+
+}
+
+.opcao-variacao {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 16px 18px;
+
+    border: 2px solid var(--cor-borda);
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    background: var(--cor-card);
+
+}
+
+.opcao-variacao:hover {
+
+    border-color: var(--cor-acento-forte);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--sombra-leve);
+
+}
+
+.opcao-variacao.selecionada {
+
+    border-color: var(--cor-acento-forte);
+
+    background: var(--cor-acento-fundo);
+
+}
+
+.opcao-variacao input {
+
+    width: 20px;
+    height: 20px;
+
+    accent-color: var(--cor-acento-forte);
+
+    flex-shrink: 0;
+
+}
+
+.conteudo-variacao {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+}
+
+.preco-variacao {
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+    color: var(--cor-acento-texto);
+
+    white-space: nowrap;
+
+}
+
+.conteudo-variacao strong {
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: var(--cor-texto);
+
+}
+
+.conteudo-variacao small {
+
+    margin-top: 5px;
+
+    color: var(--cor-texto-claro);
+
+    font-size: 14px;
+
+}
+
+/* ==========================================================
+   PREÇO
+========================================================== */
+
+.preco-modal {
+
+    margin-top: 30px;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: var(--cor-acento-texto);
+
+}
+
+/* ==========================================================
+   BOTÃO
+========================================================== */
+
+#botaoWhatsappVariacao {
+
+    width: 100%;
+
+    height: 58px;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    border-radius: 14px;
+
+}
+
+.modal-info h2 {
+
+    margin: 0 0 25px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: var(--cor-texto);
+
+    line-height: 1.2;
+
+}
+
+.modal-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    height: 100%;
+
+}
+
+/* ==========================================================
+   RESPONSIVO
+========================================================== */
+
+@media(max-width:900px) {
+
+    .modal-variacoes-corpo {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+}

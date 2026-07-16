@@ -1,0 +1,20 @@
+/* ==========================================================
+   ESTILO PRINCIPAL
+   Projeto: Catálogo IMPEL
+========================================================== */
+
+@import url("variaveis.css");
+@import url("reset.css");
+@import url("geral.css");
+@import url("cabecalho.css");
+@import url("navegacao.css");
+@import url("mobile.css");
+@import url("menu-lateral.css");
+@import url("secoes.css");
+@import url("componentes.css");
+@import url("produtos.css");
+@import url("animacoes.css");
+@import url("responsivo.css");
+@import url("categorias.css");
+@import url("categoria.css");
+@import url("lista-pedidos.css");
