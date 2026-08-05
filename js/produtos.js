@@ -1,32 +1,22 @@
 /* ==========================================================
    MONTAR MENSAGEM DO WHATSAPP
    Usa a mensagem personalizada cadastrada no produto
-   (com {produto}, {opcao}, {id} e {imagem}), tanto para
-   produtos com variação quanto sem variação.
+   (com {produto}, {opcao} e {id}), tanto para produtos com
+   variação quanto sem variação.
 
-   Observação: o WhatsApp não permite anexar uma imagem de
-   verdade através do link "wa.me" (só texto). Por isso a
-   imagem entra como um LINK dentro da mensagem — o WhatsApp
-   costuma mostrar uma prévia (miniatura) dela automaticamente
-   assim que o cliente abre a conversa.
+   Observação: o link da imagem NÃO é enviado na mensagem.
 ========================================================== */
 
 function montarMensagemWhatsapp(produto, variacao = null) {
 
     const modeloPadrao = variacao
-        ? `Olá, gostaria da opção "{opcao}" do produto {produto} (ID: {id})\n{imagem}`
-        : `Olá, gostaria de pedir o produto: {produto} (ID: {id})\n{imagem}`;
+        ? `Olá, gostaria da opção "{opcao}" do produto {produto} (ID: {id})`
+        : `Olá, gostaria de pedir o produto: {produto} (ID: {id})`;
 
     const modelo =
         produto.mensagemWhatsapp && produto.mensagemWhatsapp.trim()
             ? produto.mensagemWhatsapp
             : modeloPadrao;
-
-    const imagem =
-        (variacao && variacao.fotos && variacao.fotos[0]) ||
-        (Array.isArray(produto.imagens) && produto.imagens[0]) ||
-        produto.imagem ||
-        "";
 
     let texto = modelo
         .replaceAll("{produto}", produto.nome)
@@ -48,20 +38,14 @@ function montarMensagemWhatsapp(produto, variacao = null) {
 
     }
 
-    if (texto.includes("{imagem}")) {
+    // Remove qualquer {imagem} deixado em mensagens personalizadas
+    // antigas: o link da imagem não é mais enviado no WhatsApp.
+    texto = texto
+        .replaceAll("{imagem}", "")
+        .replace(/\n{2,}/g, "\n")
+        .trim();
 
-        // O admin colocou {imagem} manualmente no texto: respeita a posição.
-        texto = texto.replaceAll("{imagem}", imagem);
-
-    } else if (imagem) {
-
-        // Mensagem personalizada sem {imagem}: adiciona o link no final,
-        // assim o link da imagem sempre vai junto na mensagem.
-        texto = `${texto}\n${imagem}`;
-
-    }
-
-    return encodeURIComponent(texto.trim());
+    return encodeURIComponent(texto);
 
 }
 
