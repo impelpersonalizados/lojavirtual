@@ -1,0 +1,130 @@
+[
+    {
+        "id": "KI016",
+        "ordem": 1,
+        "ativo": true,
+        "nome": "Kit Copo Térmico e Placa – Caixa MDF",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785866588/produtos/whatsapp-image-2026-07-31-at-12-16-10-1-1785866587901.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785866588/produtos/whatsapp-image-2026-07-31-at-12-16-10-1-1785866587901.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785866613/produtos/whatsapp-image-2026-07-31-at-12-16-10-1785866613083.webp"
+        ],
+        "preco": 85,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "mães",
+            "avós",
+            "namorados/casal",
+            "pais",
+            "familia",
+            "aniversário",
+            "corporativo"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "KI050",
+        "ordem": 2,
+        "ativo": true,
+        "nome": "Kit Padrinhos – 2 Xícaras",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-12-1785867031735.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-12-1785867031735.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-11-4-1785867031734.webp"
+        ],
+        "preco": 125,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "batizado/chá revelação",
+            "familia"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "KI052",
+        "ordem": 3,
+        "ativo": true,
+        "nome": "Kit Padrinho – 1 Xícara",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-11-3-1785867031734.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-11-3-1785867031734.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-11-2-1785867031734.webp"
+        ],
+        "preco": 78,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "batizado/chá revelação",
+            "familia"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "KI056",
+        "ordem": 4,
+        "ativo": true,
+        "nome": "Kit Caneca e Placa de Homenagem",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-11-1-1785867031733.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-11-1-1785867031733.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-11-1785867031734.webp"
+        ],
+        "preco": 54,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "batizado/chá revelação",
+            "familia",
+            "mães",
+            "avós",
+            "namorados/casal",
+            "pais",
+            "aniversário",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "KI045",
+        "ordem": 5,
+        "ativo": true,
+        "nome": "Kit com Caixa Cartonada",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785869808/produtos/kitcartonada-1785869808094.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785869808/produtos/kitcartonada-1785869808094.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785870435/produtos/kitcartonada01-1785870434953.webp"
+        ],
+        "preco": 185,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "namorados/casal",
+            "pais",
+            "aniversário",
+            "Corporativo"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    }
+]

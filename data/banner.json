@@ -1,0 +1,44 @@
+{
+    "desktop": {
+        "titulo": "Novidades chegando na Impel",
+        "texto": "Descubra produtos personalizados com estilo, qualidade e destaque para o seu dia a dia.",
+        "mostrarTexto": false,
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785886803/produtos/chatgpt-image-4-de-ago-de-2026-20_37_43-1785886803626.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785886803/produtos/chatgpt-image-4-de-ago-de-2026-20_37_43-1785886803626.webp"
+        ],
+        "slides": [
+            {
+                "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785886803/produtos/chatgpt-image-4-de-ago-de-2026-20_37_43-1785886803626.webp",
+                "link": "#produto-1",
+                "texto": ""
+            }
+        ],
+        "link": "#produto-1",
+        "produtoId": ""
+    },
+    "mobile": {
+        "titulo": "",
+        "texto": "",
+        "mostrarTexto": false,
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785887483/produtos/chatgpt-image-4-de-ago-de-2026-20_50_35-1785887483403.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785887483/produtos/chatgpt-image-4-de-ago-de-2026-20_50_35-1785887483403.webp"
+        ],
+        "slides": [
+            {
+                "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785887483/produtos/chatgpt-image-4-de-ago-de-2026-20_50_35-1785887483403.webp",
+                "link": "#produto-CA024",
+                "texto": ""
+            }
+        ],
+        "link": "#produto-CA024",
+        "produtoId": ""
+    },
+    "titulo": "Novidades chegando na Impel",
+    "texto": "Descubra produtos personalizados com estilo, qualidade e destaque para o seu dia a dia.",
+    "mostrarTexto": false,
+    "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785886803/produtos/chatgpt-image-4-de-ago-de-2026-20_37_43-1785886803626.webp",
+    "link": "#produto-1",
+    "produtoId": ""
+}

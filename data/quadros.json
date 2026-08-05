@@ -1,0 +1,842 @@
+[
+    {
+        "id": "QU128",
+        "nome": "Quadro Cerâmico 20x20cm - Amigas Especiais",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-03-1785530340540.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "quadros cerâmicos"
+        ],
+        "ativo": true,
+        "ordem": 1,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-03-1785530340540.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU127",
+        "nome": "Quadro Cerâmico 20x20cm - Te Amamos, Papai",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530452/produtos/azulejo-36-1785530442781.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "pais"
+        ],
+        "ativo": true,
+        "ordem": 2,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530452/produtos/azulejo-36-1785530442781.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU125",
+        "nome": "Quadro Cerâmico 20x20cm - Pai, Amigo Para Toda a Vida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530451/produtos/azulejo-35-1785530442781.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "pais"
+        ],
+        "ativo": true,
+        "ordem": 3,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530451/produtos/azulejo-35-1785530442781.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU130",
+        "nome": "Quadro Cerâmico 20x20cm - Feliz Dia dos Pais",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530450/produtos/azulejo-37-1785530442781.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "pais"
+        ],
+        "ativo": true,
+        "ordem": 4,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530450/produtos/azulejo-37-1785530442781.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU132",
+        "nome": "Quadro Cerâmico 20x20cm - Pai, Amo Você",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-31-1785530442780.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Pais"
+        ],
+        "ativo": true,
+        "ordem": 5,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-31-1785530442780.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU134",
+        "nome": "Quadro Cerâmico 20x20cm - Pai, Te Amo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-32-1785530442781.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Pais"
+        ],
+        "ativo": true,
+        "ordem": 6,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-32-1785530442781.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU136",
+        "nome": "Quadro Cerâmico 20x20cm - Para Sempre o Meu Herói",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-33-1785530442781.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Pais"
+        ],
+        "ativo": true,
+        "ordem": 7,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-33-1785530442781.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU138",
+        "nome": "Quadro Cerâmico 20x20cm - Momentos Especiais",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-34-1785530442781.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Pais"
+        ],
+        "ativo": true,
+        "ordem": 8,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-34-1785530442781.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir esse {produto} ({id})"
+    },
+    {
+        "id": "QU164",
+        "nome": "Quadro Cerâmico 20x20cm - Mãe, Amor Eterno",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-38-1785530442781.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Mães"
+        ],
+        "ativo": true,
+        "ordem": 9,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530449/produtos/azulejo-38-1785530442781.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU166",
+        "nome": "Quadro Cerâmico 20x20cm - Trintei!",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530431/produtos/azulejo-28-1785530419226.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "aniversário"
+        ],
+        "ativo": true,
+        "ordem": 10,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530431/produtos/azulejo-28-1785530419226.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU172",
+        "nome": "Quadro Cerâmico 20x20cm - Madrinha, Presente de Deus",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530431/produtos/azulejo-29-1785530419226.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Batizado/Chá Revelação"
+        ],
+        "ativo": true,
+        "ordem": 11,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530431/produtos/azulejo-29-1785530419226.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU174",
+        "nome": "Quadro Cerâmico 20x20cm - Recordação",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530429/produtos/azulejo-30-1785530419226.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "aniversário",
+            "mimimei"
+        ],
+        "ativo": true,
+        "ordem": 12,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530429/produtos/azulejo-30-1785530419226.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU176",
+        "nome": "Quadro Cerâmico 20x20cm - Meu Pai, Meu Herói",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530428/produtos/azulejo-24-1785530419225.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Pais"
+        ],
+        "ativo": true,
+        "ordem": 13,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530428/produtos/azulejo-24-1785530419225.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU191",
+        "nome": "Quadro Cerâmico 20x20cm - Bem-vinda ao Mundo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530428/produtos/azulejo-27-1785530419226.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Batizado/Chá Revelação"
+        ],
+        "ativo": true,
+        "ordem": 14,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530428/produtos/azulejo-27-1785530419226.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU180",
+        "nome": "Quadro Cerâmico 20x20cm - Momentos Especiais",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530427/produtos/azulejo-21-1785530419225.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Avós"
+        ],
+        "ativo": true,
+        "ordem": 15,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530427/produtos/azulejo-21-1785530419225.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU182",
+        "nome": "Quadro Cerâmico 20x20cm - Te Amo, Mãe",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530427/produtos/azulejo-23-1785530419225.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Mães"
+        ],
+        "ativo": true,
+        "ordem": 16,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530427/produtos/azulejo-23-1785530419225.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU184",
+        "nome": "Quadro Cerâmico 20x20cm - Nossa História de Amor",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530411/produtos/azulejo-25-1785530394287.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "namorados/casal"
+        ],
+        "ativo": true,
+        "ordem": 17,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530411/produtos/azulejo-25-1785530394287.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU186",
+        "nome": "Quadro Cerâmico 20x20cm - Primeiro Ano de Vida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530426/produtos/azulejo-20-1785530419225.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "Batizado/Chá Revelação",
+            "aniversário",
+            "infantil"
+        ],
+        "ativo": true,
+        "ordem": 18,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530426/produtos/azulejo-20-1785530419225.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU188",
+        "nome": "Quadro Cerâmico 20x20cm - A Melhor Mãe do Mundo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530425/produtos/azulejo-22-1785530419225.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "mães"
+        ],
+        "ativo": true,
+        "ordem": 19,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530425/produtos/azulejo-22-1785530419225.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU194",
+        "nome": "Quadro Cerâmico 20x20cm - Bem-vindo ao Mundo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530425/produtos/azulejo-26-1785530419226.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "infantil"
+        ],
+        "ativo": true,
+        "ordem": 20,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530425/produtos/azulejo-26-1785530419226.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU205",
+        "nome": "Quadro Cerâmico 20x20cm - Amor",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530381/produtos/azulejo-18-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "namorados/casal"
+        ],
+        "ativo": true,
+        "ordem": 21,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530381/produtos/azulejo-18-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU208",
+        "nome": "Quadro Cerâmico 20x20cm - Lembranças",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530381/produtos/azulejo-19-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "infantil"
+        ],
+        "ativo": true,
+        "ordem": 22,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530381/produtos/azulejo-19-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU225",
+        "nome": "Quadro Cerâmico 20x20cm - Recordações",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530379/produtos/azulejo-17-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "mães",
+            "amizade",
+            "familia"
+        ],
+        "ativo": true,
+        "ordem": 23,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530379/produtos/azulejo-17-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU227",
+        "nome": "Quadro Cerâmico 20x20cm - Amigos Para Sempre",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530378/produtos/azulejo-12-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "amizade",
+            "familia"
+        ],
+        "ativo": true,
+        "ordem": 24,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530378/produtos/azulejo-12-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU229",
+        "nome": "Quadro Cerâmico 20x20cm - Aventuras na Natureza",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530378/produtos/azulejo-15-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "amizade",
+            "mimimei"
+        ],
+        "ativo": true,
+        "ordem": 25,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530378/produtos/azulejo-15-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU244",
+        "nome": "Quadro Cerâmico 20x20cm - Momentos",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530377/produtos/azulejo-11-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "amizade",
+            "mimimei"
+        ],
+        "ativo": true,
+        "ordem": 26,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530377/produtos/azulejo-11-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU246",
+        "nome": "Quadro Cerâmico 20x20cm - Nossa História",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530377/produtos/azulejo-16-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "namorados/casal"
+        ],
+        "ativo": true,
+        "ordem": 27,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530377/produtos/azulejo-16-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU264",
+        "nome": "Quadro Cerâmico 20x20cm - Fotos Polaroid ",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-09-1785530370610.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "amizade",
+            "mimimei"
+        ],
+        "ativo": true,
+        "ordem": 28,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-09-1785530370610.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU266",
+        "nome": "Quadro Cerâmico 20x20cm - Lembrança de Casamento",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-10-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "namorados/casal"
+        ],
+        "ativo": true,
+        "ordem": 29,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-10-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU268",
+        "nome": "Quadro Cerâmico 20x20cm - Retrato",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-13-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "amizade",
+            "mimimei"
+        ],
+        "ativo": true,
+        "ordem": 30,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-13-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU270",
+        "nome": "Quadro Cerâmico 20x20cm - Diário de Viagem",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-14-1785530370611.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "amizade",
+            "mimimei"
+        ],
+        "ativo": true,
+        "ordem": 31,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530376/produtos/azulejo-14-1785530370611.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU272",
+        "nome": "Quadro Cerâmico 20x20cm - Família, Amor Infinito",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530350/produtos/azulejo-07-1785530340540.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "familia",
+            "avós",
+            "mães"
+        ],
+        "ativo": true,
+        "ordem": 32,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530350/produtos/azulejo-07-1785530340540.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU274",
+        "nome": "Quadro Cerâmico 20x20cm - Recordações Inesquecíveis",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530348/produtos/azulejo-05-1785530340540.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "amizade"
+        ],
+        "ativo": true,
+        "ordem": 33,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530348/produtos/azulejo-05-1785530340540.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU276",
+        "nome": "Quadro Cerâmico 20x20cm - Família Abençoada",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-01-1785530340538.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "familia",
+            "pais",
+            "mães"
+        ],
+        "ativo": true,
+        "ordem": 34,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-01-1785530340538.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU278",
+        "nome": "Quadro Cerâmico 20x20cm - Você é Incrível",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-02-1785530340540.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "familia",
+            "amizade",
+            "mimimei",
+            "mães"
+        ],
+        "ativo": true,
+        "ordem": 35,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-02-1785530340540.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU280",
+        "nome": "Quadro Cerâmico 20x20cm - Nossa História de Amor",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-04-1785530340540.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "namorados/casal"
+        ],
+        "ativo": true,
+        "ordem": 36,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-04-1785530340540.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU317",
+        "nome": "Quadro Cerâmico 20x20cm - Feliz Aniversário",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-06-1785530340540.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "infantil",
+            "aniversário"
+        ],
+        "ativo": true,
+        "ordem": 37,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-06-1785530340540.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "QU319",
+        "nome": "Quadro Cerâmico 20x20cm - Feliz Aniversário, Mãe",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-08-1785530340541.webp",
+        "preco": 33,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "quadros cerâmicos",
+            "aniversário",
+            "mães"
+        ],
+        "ativo": true,
+        "ordem": 38,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530347/produtos/azulejo-08-1785530340541.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "PL005",
+        "nome": "Placa em MDF Cru Gravada – 21×29 cm",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785872882/produtos/whatsapp-image-2026-07-31-at-12-16-10-2-1785872881853.webp",
+        "preco": 25,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "aniversário",
+            "mães",
+            "placa decorativa"
+        ],
+        "ativo": true,
+        "ordem": 39,
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785872882/produtos/whatsapp-image-2026-07-31-at-12-16-10-2-1785872881853.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero um {produto}. Quero impressionar!😁({id})"
+    }
+]

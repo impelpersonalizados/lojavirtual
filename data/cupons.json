@@ -1,0 +1,14 @@
+[
+    {
+        "codigo": "PAI10",
+        "tipo": "percentual",
+        "valor": 10,
+        "ativo": true
+    },
+    {
+        "codigo": "BEMVINDO20",
+        "tipo": "fixo",
+        "valor": 20,
+        "ativo": true
+    }
+]

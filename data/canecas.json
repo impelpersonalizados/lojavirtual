@@ -1,0 +1,2540 @@
+[
+    {
+        "id": "CA305",
+        "ordem": 1,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Batizado Minimalista",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996029/produtos/canecabatizado01-1784996027143.webp",
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "batizado/chá revelação",
+            "canecas"
+        ],
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996029/produtos/canecabatizado01-1784996027143.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996029/produtos/canecabatizado1-1784996027143.webp"
+        ],
+        "mostrarPreco": false,
+        "variacoes": [
+            {
+                "nome": "Madrinha",
+                "preco": 39,
+                "fotos": [
+                    "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996029/produtos/canecabatizado01-1784996027143.webp"
+                ]
+            },
+            {
+                "nome": "Padrinho",
+                "preco": 39,
+                "fotos": [
+                    "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996029/produtos/canecabatizado1-1784996027143.webp"
+                ]
+            }
+        ],
+        "tituloVariacoes": "Gênero",
+        "mensagemWhatsapp": "Olá! Gostaria de pedir uma {produto} {opcao} ({id})"
+    },
+    {
+        "id": "CA362",
+        "ordem": 2,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Pezinho ",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996029/produtos/canecabatizado03-1784996027144.webp",
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "Batizado/Chá Revelação",
+            "canecas"
+        ],
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996029/produtos/canecabatizado03-1784996027144.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "Genero",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "CA361",
+        "ordem": 3,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Padrinho",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996030/produtos/canecabatizado02-1784996027143.webp",
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "Batizado/Chá Revelação",
+            "canecas"
+        ],
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996030/produtos/canecabatizado02-1784996027143.webp"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "Genero",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI239",
+        "ordem": 4,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml - Padrinhos Minimalista",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784998279/produtos/xicara002-1784998277721.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784998279/produtos/xicara002-1784998277721.webp",
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784998279/produtos/xicara0021-1784998277729.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "Batizado/Chá Revelação",
+            "xícaras"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [
+            {
+                "nome": "Madrinha",
+                "preco": 40,
+                "fotos": [
+                    "https://res.cloudinary.com/dzrshdovw/image/upload/v1784998279/produtos/xicara002-1784998277721.webp"
+                ]
+            },
+            {
+                "nome": "Padrinho",
+                "preco": 40,
+                "fotos": [
+                    "https://res.cloudinary.com/dzrshdovw/image/upload/v1784998279/produtos/xicara0021-1784998277729.webp"
+                ]
+            }
+        ],
+        "tituloVariacoes": "Gênero",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} para {opcao} ({id})"
+    },
+    {
+        "id": "XI108",
+        "ordem": 5,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml - Florzinhas Rosa",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784334071/produtos/eqvslkwk2jj6rucojqpo.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784334071/produtos/eqvslkwk2jj6rucojqpo.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "Batizado/Chá Revelação",
+            "xícaras"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "XI127",
+        "ordem": 6,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml - Florzinhas Lilás",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784334071/produtos/ipoutut8q6efglmh71tv.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784334071/produtos/ipoutut8q6efglmh71tv.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "Batizado/Chá Revelação",
+            "xícaras"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "XI167",
+        "ordem": 7,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml - Carrinhos",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784341606/produtos/qniqadfagchnsnpdlqvc.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784341606/produtos/qniqadfagchnsnpdlqvc.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "Batizado/Chá Revelação",
+            "xícaras"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "CA371",
+        "ordem": 8,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Melhores Momentos",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784988878/produtos/owmsmgfg1ootnrj2fvtg.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784988878/produtos/owmsmgfg1ootnrj2fvtg.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "canecas"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "CA378",
+        "ordem": 9,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Amizade Inesperada",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784988878/produtos/pbf7mxdul7w8vemg5tr8.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784988878/produtos/pbf7mxdul7w8vemg5tr8.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "canecas"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "CA431",
+        "ordem": 10,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Momentos Inesquecíveis",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784988878/produtos/pry5uu6s8tzywpgx2kyx.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784988878/produtos/pry5uu6s8tzywpgx2kyx.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "canecas"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "CA571",
+        "ordem": 11,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Grande Pai e Super Avô",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588379/produtos/canecadiadospais-09-1785588371978.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588379/produtos/canecadiadospais-09-1785588371978.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA572",
+        "ordem": 12,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Pai Amigo Para Toda a Vida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588377/produtos/canecadiadospais-04-1785588371977.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588377/produtos/canecadiadospais-04-1785588371977.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA573",
+        "ordem": 13,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Papai, Te Amamos",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-02-1785588371977.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-02-1785588371977.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA574",
+        "ordem": 14,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Meu Exemplo de Vida, Minha Inspiração",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-03-1785588371977.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-03-1785588371977.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA575",
+        "ordem": 15,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Pai, Meu Porto Seguro",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-05-1785588371978.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-05-1785588371978.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA576",
+        "ordem": 16,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Pai, Obrigado Por Tudo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-06-1785588371978.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-06-1785588371978.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA577",
+        "ordem": 17,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Melhor Pai do Mundo, Te Amamos",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-07-1785588371978.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-07-1785588371978.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA578",
+        "ordem": 18,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Amo Você, Pai",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588375/produtos/canecadiadospais-01-1785588371973.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588375/produtos/canecadiadospais-01-1785588371973.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA579",
+        "ordem": 19,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Meu Super Herói Favorito",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588380/produtos/canecadiadospais-11-1785588371979.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588380/produtos/canecadiadospais-11-1785588371979.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA582",
+        "ordem": 20,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Obrigada Por Tudo, Pai ",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-08-1785588371978.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588376/produtos/canecadiadospais-08-1785588371978.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA586",
+        "ordem": 21,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Meu Pai é o Cara",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588380/produtos/canecadiadospais-10-1785588371978.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785588380/produtos/canecadiadospais-10-1785588371978.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Cansei de dar meia pro meu pai😁, quero pedir essa {produto} ({id})"
+    },
+    {
+        "id": "CA644",
+        "ordem": 22,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Amigos Para Sempre",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785624818/produtos/caneca-amizade-1-1785624816620.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785624818/produtos/caneca-amizade-1-1785624816620.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "aniversário"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA645",
+        "ordem": 23,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Amiga dos Melhores Momentos",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785624819/produtos/caneca-amizade-3-1785624816629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785624819/produtos/caneca-amizade-3-1785624816629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "aniversário"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA646",
+        "ordem": 24,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Amizade Que Vale Ouro",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785624819/produtos/caneca-amizade-2-1785624816629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785624819/produtos/caneca-amizade-2-1785624816629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "aniversário"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA647",
+        "ordem": 25,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Você é Incrível",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625055/produtos/caneca-aniversario-01-1785625053517.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625055/produtos/caneca-aniversario-01-1785625053517.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "aniversário"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA649",
+        "ordem": 26,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Tons de Infância",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625057/produtos/caneca-aniversario-05-1785625053520.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625057/produtos/caneca-aniversario-05-1785625053520.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA650",
+        "ordem": 27,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Feliz aniversário",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625055/produtos/caneca-aniversario-02-1785625053518.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625055/produtos/caneca-aniversario-02-1785625053518.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA651",
+        "ordem": 28,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Feliz aniversário, Mães",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625055/produtos/caneca-aniversario-03-1785625053519.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625055/produtos/caneca-aniversario-03-1785625053519.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "mães"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA652",
+        "ordem": 29,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Avó, Sinônimo de Amor Eterno",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s01-1785625750608.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s01-1785625750608.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA654",
+        "ordem": 30,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Lembranças Que Aquecem o Coração",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625760/produtos/canecaava-s09-1785625750610.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625760/produtos/canecaava-s09-1785625750610.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós",
+            "familia",
+            "pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA656",
+        "ordem": 31,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Vovô é Papai com Açúcar",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625757/produtos/canecaava-s03-1785625750609.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625757/produtos/canecaava-s03-1785625750609.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA698",
+        "ordem": 32,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Coração de Avô",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s02-1785625750609.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s02-1785625750609.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA700",
+        "ordem": 33,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Melhor Avó do Mundo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s04-1785625750609.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s04-1785625750609.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA737",
+        "ordem": 34,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Vovó, Te Amo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s07-1785625750610.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625756/produtos/canecaava-s07-1785625750610.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA752",
+        "ordem": 35,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Parabéns, Vovó!",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625755/produtos/canecaava-s05-1785625750610.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625755/produtos/canecaava-s05-1785625750610.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA754",
+        "ordem": 36,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Caneca da Vovó",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625755/produtos/canecaava-s06-1785625750610.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625755/produtos/canecaava-s06-1785625750610.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA762",
+        "ordem": 37,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Parabéns, Vovó!",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625755/produtos/canecaava-s5-1785625750610.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785625755/produtos/canecaava-s5-1785625750610.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "avós"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA764",
+        "ordem": 38,
+        "ativo": true,
+        "nome": "Caneca 325ml - Aceita Ser Minha Dinda?",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996033/produtos/canecabatizado05-1784996027144.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996033/produtos/canecabatizado05-1784996027144.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Batizado/Chá Revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA765",
+        "ordem": 39,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Você Foi Promovida a Dinda",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996030/produtos/canecabatizado04-1784996027144.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1784996030/produtos/canecabatizado04-1784996027144.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "Batizado/Chá Revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA780",
+        "ordem": 40,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Stitch",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628044/produtos/stitsh-1-1785628042302.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628044/produtos/stitsh-1-1785628042302.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "infantil",
+            "amizade",
+            "familia"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA782",
+        "ordem": 41,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Mãe, o Amor Mais Bonito Que Existe!",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e01-1785628210464.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e01-1785628210464.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "mães"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA784",
+        "ordem": 42,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - A Melhor Mãe do Mundo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628214/produtos/canecama-e05-1785628210465.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628214/produtos/canecama-e05-1785628210465.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "mães"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA796",
+        "ordem": 43,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - A Melhor Mãe do Mundo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e02-1785628210465.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e02-1785628210465.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "mães"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA798",
+        "ordem": 44,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Mãe, Minha Tradução de Amor",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e03-1785628210465.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e03-1785628210465.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "mães"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA800",
+        "ordem": 45,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Mãe, Presente de Deus",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e04-1785628210465.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628213/produtos/canecama-e04-1785628210465.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "mães"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA802",
+        "ordem": 46,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Meu Melhor Presente",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628616/produtos/canecanamorados0712-1785628615217.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628616/produtos/canecanamorados0712-1785628615217.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA805",
+        "ordem": 47,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Eu Amo Muuuito Você",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628604/produtos/canecanamorados0710-1785628600629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628604/produtos/canecanamorados0710-1785628600629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA807",
+        "ordem": 48,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Você Me Faz Tão Bem",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628604/produtos/canecanamorados0711-1785628600629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628604/produtos/canecanamorados0711-1785628600629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA809",
+        "ordem": 49,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Você Ilumina Meus Dias",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0706-1785628600629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0706-1785628600629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA811",
+        "ordem": 50,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Você é Meu Motivo de Sorrir",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0707-1785628600629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0707-1785628600629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA813",
+        "ordem": 51,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Meu Coração é Seu",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0708-1785628600629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0708-1785628600629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA815",
+        "ordem": 52,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Por Você, Tudo Vale a Pena",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0709-1785628600629.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628603/produtos/canecanamorados0709-1785628600629.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA817",
+        "ordem": 53,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Até Longe Você Me Faz Bem",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628592/produtos/canecanamorados0704-1785628588272.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628592/produtos/canecanamorados0704-1785628588272.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA830",
+        "ordem": 54,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Te Amo PatoDa Vida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628592/produtos/canecanamorados0705-1785628588272.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628592/produtos/canecanamorados0705-1785628588272.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA835",
+        "ordem": 55,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Te Amo PatoDa Vida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0602-1785628588271.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0602-1785628588271.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA850",
+        "ordem": 56,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Você Coisou Meu Coração",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0701-1785628588272.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0701-1785628588272.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA852",
+        "ordem": 57,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Você é Plano de Deus",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0702-1785628588272.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0702-1785628588272.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA854",
+        "ordem": 58,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Minha Notificação Favorita",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0703-1785628588272.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628591/produtos/canecanamorados0703-1785628588272.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA856",
+        "ordem": 59,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Amor da Minha Vida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628579/produtos/canecanamorados0100-1785628574414.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628579/produtos/canecanamorados0100-1785628574414.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA858",
+        "ordem": 60,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Melhor Namorado do Mundo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628579/produtos/canecanamorados0500-1785628574414.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628579/produtos/canecanamorados0500-1785628574414.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA860",
+        "ordem": 61,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Por Você, Tudo Vale a Pena",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628579/produtos/canecanamorados0601-1785628574415.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628579/produtos/canecanamorados0601-1785628574415.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA862",
+        "ordem": 62,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Meu Amor é Sem Medida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628578/produtos/canecanamorados0400-1785628574414.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628578/produtos/canecanamorados0400-1785628574414.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA864",
+        "ordem": 63,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Amor da Minha Vida",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628577/produtos/canecanamorados0200-1785628574414.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628577/produtos/canecanamorados0200-1785628574414.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA885",
+        "ordem": 64,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Te Amo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628576/produtos/canecanamorados0300-1785628574414.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785628576/produtos/canecanamorados0300-1785628574414.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA899",
+        "ordem": 65,
+        "ativo": true,
+        "nome": "Caneca personalizada 325ml - Nossa Familia",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785631676/produtos/caneca-familia-14-1785631674904.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785631676/produtos/caneca-familia-14-1785631674904.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CO006",
+        "ordem": 66,
+        "ativo": true,
+        "nome": "Copo Cuia Térmico 350 ml – O Melhor Pai",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785852893/produtos/copocuia01-1785852892903.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785852893/produtos/copocuia01-1785852892903.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "avós",
+            "pais",
+            "familia",
+            "aniversário"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "CO007",
+        "ordem": 67,
+        "ativo": true,
+        "nome": "Copo Cuia Térmico 350 ml – Padrinho",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785852942/produtos/copocuia03-1785852942038.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785852942/produtos/copocuia03-1785852942038.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "familia"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN003",
+        "ordem": 68,
+        "ativo": true,
+        "nome": "10 un. Copo Cuia Térmico 350 ml – Padrinho (Cópia)",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785852942/produtos/copocuia04-1785852942038.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785852942/produtos/copocuia04-1785852942038.webp"
+        ],
+        "preco": 380,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "familia"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "XI240",
+        "ordem": 69,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Convite Especial",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara003-1785856172967.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara003-1785856172967.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "batizado/chá revelação",
+            "xícaras"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI241",
+        "ordem": 70,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Mãe Guerreira",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856182/produtos/xicara007-1785856172967.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856182/produtos/xicara007-1785856172967.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "mães"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI243",
+        "ordem": 71,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Titia",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856182/produtos/xicara0091-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856182/produtos/xicara0091-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI244",
+        "ordem": 72,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Titia (Cópia)",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856181/produtos/xicara015-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856181/produtos/xicara015-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação",
+            "mães",
+            "avós",
+            "aniversário",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI247",
+        "ordem": 73,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Acredite em Você",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara005-1785856172967.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara005-1785856172967.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação",
+            "mães",
+            "avós",
+            "aniversário",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI248",
+        "ordem": 74,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Madrinha",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara008-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara008-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI249",
+        "ordem": 75,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Dindo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara009-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara009-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI250",
+        "ordem": 76,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Dinda",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara012-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara012-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI251",
+        "ordem": 77,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Promovida a Titia",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara016-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856180/produtos/xicara016-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI252",
+        "ordem": 78,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Promovida a Titia (Cópia)",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856179/produtos/xicara004-1785856172967.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856179/produtos/xicara004-1785856172967.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação",
+            "mães",
+            "avós",
+            "aniversário"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI253",
+        "ordem": 79,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Convite para Dinda",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856179/produtos/xicara010-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856179/produtos/xicara010-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "XI254",
+        "ordem": 80,
+        "ativo": true,
+        "nome": "Xicara Personalizada 190ml – Jardim Laranja",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856179/produtos/xicara017-1785856172968.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856179/produtos/xicara017-1785856172968.webp"
+        ],
+        "preco": 40,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "xícaras",
+            "batizado/chá revelação",
+            "avós",
+            "mães",
+            "mimimei",
+            "aniversário"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá, gostaria de pedir uma {produto} ({id})"
+    },
+    {
+        "id": "CA903",
+        "ordem": 81,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Propósito de Deus",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785865650/produtos/canecafloral-16-1785865648129.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785865650/produtos/canecafloral-16-1785865648129.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA905",
+        "ordem": 82,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Pequenos Detalhes",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785865650/produtos/canecafloral-17-1785865648130.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785865650/produtos/canecafloral-17-1785865648130.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA907",
+        "ordem": 83,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Motivos para Sorrir",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863500/produtos/canecafloral-08-1785863489013.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863500/produtos/canecafloral-08-1785863489013.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA928",
+        "ordem": 84,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Floral com Inicial",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863499/produtos/canecafloral-15-1785863489014.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863499/produtos/canecafloral-15-1785863489014.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA939",
+        "ordem": 85,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Floral com Inicial com Foto",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863496/produtos/canecafloral-09-1785863489013.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863496/produtos/canecafloral-09-1785863489013.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA951",
+        "ordem": 86,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Floral Rosa",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863496/produtos/canecafloral-14-1785863489013.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863496/produtos/canecafloral-14-1785863489013.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA953",
+        "ordem": 87,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Gratidão Sempre",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-07-1785863489012.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-07-1785863489012.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA955",
+        "ordem": 88,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Força para Florescer",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-10-1785863489013.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-10-1785863489013.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA970",
+        "ordem": 89,
+        "ativo": true,
+        "nome": "Caneca Inicial Aquarela Rosa",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-11-1785863489013.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-11-1785863489013.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA972",
+        "ordem": 90,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Café Nunca Falha",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-12-1785863489013.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-12-1785863489013.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA974",
+        "ordem": 91,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Caminho de Luz",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-13-1785863489013.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863495/produtos/canecafloral-13-1785863489013.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA977",
+        "ordem": 92,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Brilhe Todos os Dias",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863447/produtos/canecafloral-06-1785863442032.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863447/produtos/canecafloral-06-1785863442032.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1000",
+        "ordem": 93,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Floresca",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863446/produtos/canecafloral-02-1785863442031.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863446/produtos/canecafloral-02-1785863442031.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1094",
+        "ordem": 94,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Aniversário Floral Com Borboletas",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863446/produtos/canecafloral-03-1785863442031.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863446/produtos/canecafloral-03-1785863442031.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1092",
+        "ordem": 95,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Floral Com Borboletas",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863446/produtos/canecafloral-05-1785863442032.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863446/produtos/canecafloral-05-1785863442032.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1088",
+        "ordem": 96,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Floresça Onde Deus Te Plantar",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863445/produtos/canecafloral-01-1785863442031.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863445/produtos/canecafloral-01-1785863442031.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "mães",
+            "avós",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1112",
+        "ordem": 97,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Casados",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863445/produtos/canecafloral-04-1785863442031.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785863445/produtos/canecafloral-04-1785863442031.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1121",
+        "ordem": 98,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Amizade",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785878930/produtos/caneca-flork-09-1785878928345.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785878930/produtos/caneca-flork-09-1785878928345.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "aniversário",
+            "familia"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1123",
+        "ordem": 99,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Notificação Favorita",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879102/produtos/caneca-flork-01-1785879095733.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879102/produtos/caneca-flork-01-1785879095733.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "aniversário",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1138",
+        "ordem": 100,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Acaso Bonito",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879104/produtos/caneca-flork-02-1785879095733.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879104/produtos/caneca-flork-02-1785879095733.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "amizade",
+            "aniversário",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1175",
+        "ordem": 101,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  1 Ano Namoro",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879107/produtos/caneca-flork-05-1785879095734.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879107/produtos/caneca-flork-05-1785879095734.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1171",
+        "ordem": 102,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Faz Falta, Faz Raiva",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879102/produtos/caneca-flork-06-1785879095734.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879102/produtos/caneca-flork-06-1785879095734.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "namorados/casal",
+            "amizade"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1182",
+        "ordem": 103,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Te Amo, Mas...",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879102/produtos/caneca-flork-08-1785879095734.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879102/produtos/caneca-flork-08-1785879095734.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "namorados/casal",
+            "amizade",
+            "chaveiros"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1202",
+        "ordem": 104,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Dona Da Verdade",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879101/produtos/caneca-flork-03-1785879095733.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879101/produtos/caneca-flork-03-1785879095733.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "namorados/casal",
+            "amizade"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1224",
+        "ordem": 105,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Sempre tem razão",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879101/produtos/caneca-flork-04-1785879095733.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879101/produtos/caneca-flork-04-1785879095733.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "namorados/casal",
+            "amizade"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1243",
+        "ordem": 106,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml –  Prova De Amor",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879101/produtos/caneca-flork-07-1785879095734.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879101/produtos/caneca-flork-07-1785879095734.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "namorados/casal",
+            "amizade"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1253",
+        "ordem": 107,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Dorameira",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879884/produtos/caneca-dorama-6-1785879878888.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879884/produtos/caneca-dorama-6-1785879878888.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "namorados/casal",
+            "amizade"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1270",
+        "ordem": 108,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Vinte e Cinco, Vinte e Um",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879884/produtos/caneca-dorama-5-1785879878888.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879884/produtos/caneca-dorama-5-1785879878888.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "amizade",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1283",
+        "ordem": 109,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325ml – Alquimia da Almas",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-1-1785879878887.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-1-1785879878887.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "amizade",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1327",
+        "ordem": 110,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325m - Amor Oculto",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-2-1785879878888.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-2-1785879878888.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "amizade",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1348",
+        "ordem": 111,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325m - Pousando No Amor",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-3-1785879878888.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-3-1785879878888.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "amizade",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1351",
+        "ordem": 112,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325m - Uma advogada extraordinária",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-4-1785879878888.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785879882/produtos/caneca-dorama-4-1785879878888.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "amizade",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1367",
+        "ordem": 113,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325m - Obstetra",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785880987/produtos/caneca-obstetra-2-1785880985283.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785880987/produtos/caneca-obstetra-2-1785880985283.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "amizade",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    },
+    {
+        "id": "CA1376",
+        "ordem": 114,
+        "ativo": true,
+        "nome": "Caneca Personalizada 325m - Dentista",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785880987/produtos/caneca-profissa-o-1-1785880985284.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785880987/produtos/caneca-profissa-o-1-1785880985284.webp"
+        ],
+        "preco": 39,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "canecas",
+            "aniversário",
+            "amizade",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": "Olá! Quero uma {produto}. Quero impressionar!😁({id})"
+    }
+]

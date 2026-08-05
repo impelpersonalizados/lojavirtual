@@ -1,0 +1,63 @@
+[
+    {
+        "id": "CA012",
+        "ordem": 1,
+        "ativo": true,
+        "nome": "Caneta de Metal Gravada",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785872578/produtos/whatsapp-image-2026-07-31-at-12-16-09-1785872578278.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785872578/produtos/whatsapp-image-2026-07-31-at-12-16-09-1785872578278.webp"
+        ],
+        "preco": 15,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "amizade",
+            "mães",
+            "aniversário",
+            "mimimei"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "PL038",
+        "ordem": 2,
+        "ativo": true,
+        "nome": "Placa Pix MDF – 2 QR Codes",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785874760/produtos/placapix-1785874759570.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785874760/produtos/placapix-1785874759570.webp"
+        ],
+        "preco": 20,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "PL034",
+        "ordem": 3,
+        "ativo": true,
+        "nome": "Placa Pix MDF – 1 QR Codes",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785876365/produtos/placapix1-1785876364471.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785876365/produtos/placapix1-1785876364471.webp"
+        ],
+        "preco": 20,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    }
+]

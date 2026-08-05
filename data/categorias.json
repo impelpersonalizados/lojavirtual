@@ -1,0 +1,92 @@
+[
+    {
+        "id": "canecas",
+        "nome": "Copos e Canecas",
+        "ativo": true,
+        "ordem": 1,
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856182/produtos/xicara007-1785856172967.webp",
+        "temasFiltro": [
+            "Amizade",
+            "Batizado/Chá Revelação",
+            "Mães",
+            "Avós",
+            "Namorados/Casal",
+            "Pais",
+            "Familia",
+            "Aniversário",
+            "Mimimei",
+            "Infantil",
+            "Xícaras",
+            "Canecas"
+        ]
+    },
+    {
+        "id": "quadros",
+        "nome": "Itens Decorativos",
+        "ativo": true,
+        "ordem": 2,
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785530427/produtos/azulejo-23-1785530419225.webp",
+        "temasFiltro": [
+            "Amizade",
+            "Batizado/Chá Revelação",
+            "Mães",
+            "Avós",
+            "Namorados/Casal",
+            "Pais",
+            "Familia",
+            "Aniversário",
+            "Mimimei",
+            "Infantil",
+            "Quadros Cerâmicos",
+            "Placa decorativa"
+        ]
+    },
+    {
+        "id": "chaveirosebrindes",
+        "nome": "Chaveiros e Brindes",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/02-1785626886911.webp",
+        "ativo": true,
+        "ordem": 3,
+        "temasFiltro": [
+            "Amizade",
+            "Batizado/Chá Revelação",
+            "Mães",
+            "Avós",
+            "Namorados/Casal",
+            "Pais",
+            "Familia",
+            "Aniversário",
+            "Mimimei",
+            "Infantil",
+            "Chaveiros"
+        ]
+    },
+    {
+        "id": "agendas e cadernos",
+        "nome": "Escritório e Papelaria",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785777699/produtos/agenda7-1785777691747.webp",
+        "ativo": true,
+        "ordem": 4
+    },
+    {
+        "id": "kits personalizados",
+        "nome": "Kits Personalizados",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785867032/produtos/whatsapp-image-2026-07-31-at-12-16-12-1785867031735.webp",
+        "ativo": true,
+        "ordem": 5,
+        "temasFiltro": [
+            "Batizado/Chá Revelação",
+            "Corporativo"
+        ]
+    },
+    {
+        "id": "toalhinhas",
+        "nome": "Toalhinhas",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785856007/produtos/toalhinha-02-1785856006515.webp",
+        "ativo": true,
+        "ordem": 6,
+        "temasFiltro": [
+            "Toalhas de rosto"
+        ]
+    }
+]

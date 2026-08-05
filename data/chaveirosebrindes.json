@@ -1,0 +1,256 @@
+[
+    {
+        "id": "CH040",
+        "ordem": 1,
+        "ativo": true,
+        "nome": "Chaveiro de Couro Sintético – Fé",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/01-1785626886911.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/01-1785626886911.webp"
+        ],
+        "preco": 19,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "CH052",
+        "ordem": 2,
+        "ativo": true,
+        "nome": "Chaveiro de Couro Sintético – Amigo, Parceiro & Camarada",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/02-1785626886911.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/02-1785626886911.webp"
+        ],
+        "preco": 19,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "pais"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "CH056",
+        "ordem": 3,
+        "ativo": true,
+        "nome": "Chaveiro de Metal Preto com Nome",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/03-1785626886911.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/03-1785626886911.webp"
+        ],
+        "preco": 10,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "pais",
+            "amizade",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN008",
+        "ordem": 4,
+        "ativo": true,
+        "nome": "10 Un. Chaveiro MDF Cru Gravado",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/04-1785626886911.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/04-1785626886911.webp"
+        ],
+        "preco": 30,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "pais",
+            "amizade",
+            "namorados/casal",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN013",
+        "ordem": 5,
+        "ativo": true,
+        "nome": "10 Un. Chaveiro MDF Estampado",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/05-1785626886911.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/05-1785626886911.webp"
+        ],
+        "preco": 45,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "pais",
+            "amizade",
+            "namorados/casal",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "KI011",
+        "ordem": 6,
+        "ativo": true,
+        "nome": "Kit 10 Chaveiros MDF Branco Retangular",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626888/produtos/10-1785626886912.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626888/produtos/10-1785626886912.webp"
+        ],
+        "preco": 28,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "pais",
+            "amizade",
+            "namorados/casal",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN018",
+        "ordem": 7,
+        "ativo": true,
+        "nome": "10 Un. Chaveiro MDF Cru Pergaminho",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/06-1785626886912.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/06-1785626886912.webp"
+        ],
+        "preco": 25,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "pais",
+            "amizade",
+            "namorados/casal",
+            "infantil",
+            "Batizado/Chá Revelação"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN020",
+        "ordem": 8,
+        "ativo": true,
+        "nome": "10 Un. Chaveiro MDF Cru Quebra-Cabeça",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/07-1785626886912.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/07-1785626886912.webp"
+        ],
+        "preco": 25,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "amizade",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN023",
+        "ordem": 9,
+        "ativo": true,
+        "nome": "10 Un. Chaveiro MDF Branco – Coração ou Redondo",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/08-1785626886912.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/08-1785626886912.webp"
+        ],
+        "preco": 28,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "amizade",
+            "infantil",
+            "mães",
+            "pais",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN025",
+        "ordem": 10,
+        "ativo": true,
+        "nome": "10 Un. Chaveiro MDF Branco Flor",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/09-1785626886912.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/09-1785626886912.webp"
+        ],
+        "preco": 28,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "amizade",
+            "infantil",
+            "mães",
+            "namorados/casal"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    },
+    {
+        "id": "UN027",
+        "ordem": 11,
+        "ativo": true,
+        "nome": "10 Un. Chaveiro MDF Branco Ursinho",
+        "imagem": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/11-1785626886912.webp",
+        "imagens": [
+            "https://res.cloudinary.com/dzrshdovw/image/upload/v1785626887/produtos/11-1785626886912.webp"
+        ],
+        "preco": 28,
+        "avaliacao": 5,
+        "temas": [
+            "todos os produtos",
+            "chaveiros",
+            "amizade",
+            "infantil"
+        ],
+        "mostrarPreco": true,
+        "variacoes": [],
+        "tituloVariacoes": "",
+        "mensagemWhatsapp": ""
+    }
+]
