@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Imagens — Páginas Especiais</title>
+
+    <style>
+        :root {
+            --primaria: #8f00d6;
+            --secundaria: #660099;
+            --fundo: #f5f5f7;
+            --card: #ffffff;
+            --texto: #2f2f35;
+            --texto-claro: #6f6f78;
+            --borda: #e2e2e8;
+            --sucesso: #16833b;
+            --erro: #c62828;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            background: var(--fundo);
+            color: var(--texto);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .pagina {
+            width: min(1400px, 100%);
+            margin: 0 auto;
+        }
+
+        .cabecalho {
+            margin-bottom: 22px;
+            padding: 24px;
+            background: linear-gradient(135deg, var(--primaria), var(--secundaria));
+            color: white;
+            border-radius: 18px;
+        }
+
+        .cabecalho h1 {
+            margin-bottom: 8px;
+            font-size: clamp(24px, 4vw, 38px);
+        }
+
+        .cabecalho p {
+            line-height: 1.5;
+            opacity: .92;
+        }
+
+        .ferramentas {
+            display: grid;
+            grid-template-columns: minmax(220px, 1fr) auto;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .ferramentas input {
+            width: 100%;
+            min-height: 46px;
+            padding: 0 15px;
+            border: 1px solid var(--borda);
+            border-radius: 12px;
+            background: var(--card);
+            color: var(--texto);
+            font: inherit;
+            outline: none;
+        }
+
+        .ferramentas input:focus {
+            border-color: var(--primaria);
+            box-shadow: 0 0 0 3px rgba(143, 0, 214, .12);
+        }
+
+        .ferramentas button {
+            min-height: 46px;
+            padding: 0 18px;
+            border: 0;
+            border-radius: 12px;
+            background: var(--primaria);
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .resumo {
+            margin-bottom: 14px;
+            color: var(--texto-claro);
+            font-size: 14px;
+        }
+
+        .tabela-container {
+            overflow-x: auto;
+            background: var(--card);
+            border: 1px solid var(--borda);
+            border-radius: 16px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .07);
+        }
+
+        table {
+            width: 100%;
+            min-width: 900px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 13px 14px;
+            border-bottom: 1px solid var(--borda);
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background: #f0e7f7;
+            color: #501174;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+        }
+
+        tbody tr:hover {
+            background: #faf6fd;
+        }
+
+        .miniatura {
+            width: 78px;
+            height: 78px;
+            display: block;
+            object-fit: cover;
+            border: 1px solid var(--borda);
+            border-radius: 10px;
+            background: #eee;
+        }
+
+        .codigo {
+            display: inline-block;
+            padding: 6px 9px;
+            border-radius: 8px;
+            background: #eee5f6;
+            color: #5b137d;
+            font-family: Consolas, Monaco, monospace;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .tipo {
+            display: inline-block;
+            padding: 5px 8px;
+            border-radius: 999px;
+            background: #edf6ef;
+            color: var(--sucesso);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .link-imagem {
+            color: var(--primaria);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .link-imagem:hover {
+            text-decoration: underline;
+        }
+
+        .status {
+            padding: 30px;
+            text-align: center;
+            color: var(--texto-claro);
+        }
+
+        .status.erro {
+            color: var(--erro);
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 12px;
+            }
+
+            .cabecalho {
+                padding: 19px;
+            }
+
+            .ferramentas {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .cabecalho {
+                color: black;
+                background: white;
+                border: 1px solid #bbb;
+            }
+
+            .ferramentas {
+                display: none;
+            }
+
+            .tabela-container {
+                overflow: visible;
+                box-shadow: none;
+            }
+
+            table {
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="pagina">
+        <header class="cabecalho">
+            <h1>Imagens das Páginas Especiais</h1>
+            <p>
+                Esta tabela lê automaticamente o arquivo
+                <strong>data/secoes.json</strong> e mostra cada imagem com seu código,
+                categoria, seção e variação.
+            </p>
+        </header>
+
+        <section class="ferramentas">
+            <input
+                type="search"
+                id="campoBusca"
+                placeholder="Buscar por código, seção, categoria ou variação..."
+                aria-label="Buscar imagens"
+            >
+            <button type="button" id="botaoImprimir">Imprimir tabela</button>
+        </section>
+
+        <p id="resumo" class="resumo">Carregando imagens...</p>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Imagem</th>
+                        <th>Código</th>
+                        <th>Categoria</th>
+                        <th>Seção</th>
+                        <th>Variação</th>
+                        <th>Origem</th>
+                        <th>Arquivo original</th>
+                    </tr>
+                </thead>
+
+                <tbody id="corpoTabela">
+                    <tr>
+                        <td colspan="8" class="status">Carregando dados...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        const corpoTabela = document.getElementById("corpoTabela");
+        const campoBusca = document.getElementById("campoBusca");
+        const resumo = document.getElementById("resumo");
+        const botaoImprimir = document.getElementById("botaoImprimir");
+
+        let todasAsImagens = [];
+
+        function escaparHtml(valor) {
+            const elemento = document.createElement("div");
+            elemento.textContent = valor ?? "";
+            return elemento.innerHTML;
+        }
+
+        function gerarMiniaturaCloudinary(url) {
+            if (
+                typeof url === "string" &&
+                url.includes("res.cloudinary.com") &&
+                url.includes("/upload/")
+            ) {
+                return url.replace(
+                    "/upload/",
+                    "/upload/w_160,h_160,c_fill,q_auto:eco,f_auto,dpr_auto/"
+                );
+            }
+
+            return url || "";
+        }
+
+        function extrairImagens(secoes) {
+            const resultado = [];
+
+            (Array.isArray(secoes) ? secoes : []).forEach((secao) => {
+                const dadosBase = {
+                    categoria: secao.categoria || "",
+                    secao: secao.nome || "",
+                    secaoId: secao.id || ""
+                };
+
+                (secao.imagens || []).forEach((imagem) => {
+                    if (!imagem || !imagem.url) return;
+
+                    resultado.push({
+                        ...dadosBase,
+                        codigo: imagem.nome || "Sem código",
+                        variacao: "Imagem padrão",
+                        origem: "Seção",
+                        url: imagem.url
+                    });
+                });
+
+                (secao.variacoes || []).forEach((variacao) => {
+                    (variacao.imagens || []).forEach((imagem) => {
+                        if (!imagem || !imagem.url) return;
+
+                        resultado.push({
+                            ...dadosBase,
+                            codigo: imagem.nome || "Sem código",
+                            variacao: variacao.nome || "Sem nome",
+                            origem: "Variação",
+                            url: imagem.url
+                        });
+                    });
+                });
+            });
+
+            return resultado;
+        }
+
+        function renderizarTabela(lista) {
+            corpoTabela.innerHTML = "";
+
+            if (!lista.length) {
+                corpoTabela.innerHTML = `
+                    <tr>
+                        <td colspan="8" class="status">
+                            Nenhuma imagem encontrada.
+                        </td>
+                    </tr>
+                `;
+
+                resumo.textContent = "0 imagens encontradas.";
+                return;
+            }
+
+            const fragmento = document.createDocumentFragment();
+
+            lista.forEach((item, indice) => {
+                const linha = document.createElement("tr");
+                const miniatura = gerarMiniaturaCloudinary(item.url);
+
+                linha.innerHTML = `
+                    <td>${indice + 1}</td>
+
+                    <td>
+                        <a
+                            href="${escaparHtml(item.url)}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Abrir imagem original"
+                        >
+                            <img
+                                src="${escaparHtml(miniatura)}"
+                                alt="${escaparHtml(item.codigo)}"
+                                class="miniatura"
+                                width="78"
+                                height="78"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </a>
+                    </td>
+
+                    <td>
+                        <span class="codigo">${escaparHtml(item.codigo)}</span>
+                    </td>
+
+                    <td>${escaparHtml(item.categoria)}</td>
+
+                    <td>
+                        ${escaparHtml(item.secao)}
+                        <br>
+                        <small>${escaparHtml(item.secaoId)}</small>
+                    </td>
+
+                    <td>${escaparHtml(item.variacao)}</td>
+
+                    <td>
+                        <span class="tipo">${escaparHtml(item.origem)}</span>
+                    </td>
+
+                    <td>
+                        <a
+                            href="${escaparHtml(item.url)}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-imagem"
+                        >
+                            Abrir original
+                        </a>
+                    </td>
+                `;
+
+                fragmento.appendChild(linha);
+            });
+
+            corpoTabela.appendChild(fragmento);
+
+            resumo.textContent =
+                `${lista.length} imagem${lista.length === 1 ? "" : "ns"} encontrada${lista.length === 1 ? "" : "s"}.`;
+        }
+
+        function filtrarTabela() {
+            const consulta = campoBusca.value
+                .trim()
+                .toLocaleLowerCase("pt-BR");
+
+            if (!consulta) {
+                renderizarTabela(todasAsImagens);
+                return;
+            }
+
+            const filtradas = todasAsImagens.filter((item) => {
+                const texto = [
+                    item.codigo,
+                    item.categoria,
+                    item.secao,
+                    item.secaoId,
+                    item.variacao,
+                    item.origem
+                ]
+                    .join(" ")
+                    .toLocaleLowerCase("pt-BR");
+
+                return texto.includes(consulta);
+            });
+
+            renderizarTabela(filtradas);
+        }
+
+        async function carregarImagens() {
+            try {
+                const resposta = await fetch("data/secoes.json", {
+                    cache: "no-store"
+                });
+
+                if (!resposta.ok) {
+                    throw new Error(
+                        `Não foi possível carregar data/secoes.json (${resposta.status}).`
+                    );
+                }
+
+                const secoes = await resposta.json();
+
+                todasAsImagens = extrairImagens(secoes);
+
+                todasAsImagens.sort((a, b) => {
+                    return (
+                        a.categoria.localeCompare(b.categoria, "pt-BR") ||
+                        a.secao.localeCompare(b.secao, "pt-BR") ||
+                        a.variacao.localeCompare(b.variacao, "pt-BR") ||
+                        a.codigo.localeCompare(b.codigo, "pt-BR")
+                    );
+                });
+
+                renderizarTabela(todasAsImagens);
+            } catch (erro) {
+                console.error(erro);
+
+                corpoTabela.innerHTML = `
+                    <tr>
+                        <td colspan="8" class="status erro">
+                            ${escaparHtml(erro.message)}
+                            <br><br>
+                            Abra esta página pelo servidor do projeto, e não diretamente
+                            pelo arquivo do computador.
+                        </td>
+                    </tr>
+                `;
+
+                resumo.textContent = "Erro ao carregar as imagens.";
+            }
+        }
+
+        campoBusca.addEventListener("input", filtrarTabela);
+        botaoImprimir.addEventListener("click", () => window.print());
+
+        carregarImagens();
+    </script>
+</body>
+</html>
