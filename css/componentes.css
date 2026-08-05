@@ -1,0 +1,915 @@
+/* ##########################################################
+   ## CARD PRODUTO
+########################################################## */
+
+
+.cartao-produto {
+
+    min-width: 220px;
+    background: var(--cor-card);
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: var(--sombra-media);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s;
+
+}
+
+.cartao-produto:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ##########################################################
+   ## IMAGEM
+########################################################## */
+
+.imagem-produto {
+
+    position: relative;
+
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+    background: var(--cor-fundo-secundario);
+
+    cursor: pointer;
+
+}
+
+.imagem-produto img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* ##########################################################
+   ## INFORMAÇÕES
+########################################################## */
+
+.informacoes-produto {
+
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 8px 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.informacoes-produto h3 {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    line-height: 1.35;
+
+    letter-spacing: -0.03em;
+
+    color: var(--cor-texto);
+
+    text-align: center;
+
+    margin-bottom: 1px;
+
+    min-height: calc(17px * 1.35 * 2);
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    word-break: break-word;
+
+}
+
+
+
+/* ##########################################################
+   ## AVALIAÇÃO
+########################################################## */
+
+.avaliacao {
+
+    color: var(--cor-avaliacao);
+
+    font-size: 20px;
+
+    letter-spacing: 2px;
+
+    margin-top: -5px;
+
+    margin-bottom: -5px;
+
+    text-align: center;
+
+}
+
+
+/* ##########################################################
+   ## PREÇO
+########################################################## */
+
+.a-partir-de {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: var(--cor-texto-claro);
+
+    margin-bottom: -2px;
+
+}
+
+.preco {
+
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+
+}
+
+
+
+.preco .moeda {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: var(--cor-secundaria);
+
+    margin-right: -5px;
+
+}
+
+.preco .valor {
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    color: var(--cor-secundaria);
+
+}
+
+.preco .centavos {
+
+    font-size: 14px;
+
+    vertical-align: super;
+
+    font-weight: 900;
+
+    margin-left: -5px;
+
+    position: relative;
+    top: -15px;
+
+    color: var(--cor-secundaria);
+
+}
+
+/* ##########################################################
+   ## Css do Id
+########################################################## */
+
+.produto-id {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: var(--cor-texto-claro);
+
+    margin-top: 0px;
+
+    margin-bottom: 0px;
+
+    text-align: center;
+
+    letter-spacing: .5px;
+
+}
+
+.banner-principal {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-principal .banner-item {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+    transition: grid-template-columns .4s ease, gap .4s ease;
+}
+
+.banner-principal .banner-conteudo {
+    padding: 32px;
+    color: var(--cor-texto-gradiente);
+    transition: padding .4s ease;
+}
+
+.banner-principal .banner-conteudo h2 {
+    font-size: 32px;
+    margin: 0 0 10px;
+}
+
+.banner-principal .banner-conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+    opacity: 0.95;
+}
+
+.banner-principal .banner-imagem {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    overflow: hidden;
+}
+
+.banner-principal .banner-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-principal .banner-item.sem-texto {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
+.banner-principal .banner-item.sem-texto .banner-conteudo {
+    display: none;
+}
+
+.banner-principal .banner-item.sem-texto .banner-imagem {
+    min-height: 320px;
+}
+
+/* ==========================================================
+   LIGHTBOX
+========================================================== */
+#lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: var(--cor-overlay-forte);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s;
+
+    z-index: 99999;
+
+}
+
+#lightbox.ativo {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+.caixa-lightbox {
+
+    position: relative;
+
+    width: min(480px, 92vw);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 28px 24px 24px;
+
+    background: var(--cor-card);
+
+    border-radius: 18px;
+
+    transform: scale(.92);
+
+    transition: .35s;
+
+    box-shadow: var(--sombra-lightbox);
+
+}
+
+#lightbox.ativo .caixa-lightbox {
+
+    transform: scale(1);
+
+}
+
+.titulo-lightbox {
+
+    color: var(--cor-texto);
+
+    font-size: 17px;
+
+    text-align: center;
+
+    padding-right: 36px;
+
+    width: 100%;
+
+}
+
+.moldura-lightbox {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255, 255, 255, .06);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+}
+
+#imagem-lightbox {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+#fechar-lightbox {
+
+    position: absolute;
+
+    top: 23px;
+
+    right: 14px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    backdrop-filter: blur(8px);
+
+    color: var(--cor-texto);
+
+    font-size: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .25s;
+
+    z-index: 2;
+
+}
+
+#fechar-lightbox:hover {
+
+    background: var(--cor-lightbox-botao-hover);
+
+    transform: rotate(90deg);
+
+}
+
+.indicadores-lightbox {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    width: 100%;
+
+}
+
+.indicadores-lightbox img {
+
+    width: 52px;
+
+    height: 52px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    border: 2px solid transparent;
+
+    cursor: pointer;
+
+    opacity: .55;
+
+    transition: .2s;
+
+}
+
+.indicadores-lightbox img:hover {
+
+    opacity: .85;
+
+}
+
+.indicadores-lightbox img.ativo {
+
+    opacity: 1;
+
+    border-color: var(--cor-primaria);
+
+}
+
+.banner-principal .banner-slides {
+    position: relative;
+}
+
+.banner-principal .banner-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .7s ease;
+}
+
+.banner-principal .banner-slide.ativo {
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .banner-principal .banner-item {
+        grid-template-columns: 1fr;
+    }
+
+    /* Banner ocupa 100% da largura e a altura acompanha a proporção real da imagem,
+       então ela nunca é cortada (sem object-fit: cover, sem min-height fixo) */
+    .banner-principal .banner-imagem {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    .banner-principal .banner-imagem img {
+        position: static;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .banner-principal .banner-item.sem-texto .banner-imagem {
+        min-height: 0;
+    }
+
+    .banner-principal .banner-conteudo {
+        padding: 24px;
+    }
+
+    /* Troca instantânea de slide (display none/block) — não precisa de
+       crossfade nem de animar "height"; é a forma mais leve de trocar,
+       já que cada imagem é exibida na sua altura real, sem cortes. */
+    .banner-principal .banner-slides {
+        position: static;
+        min-height: 0;
+    }
+
+    .banner-principal .banner-slide {
+        position: static !important;
+        display: none !important;
+        opacity: 1 !important;
+    }
+
+    .banner-principal .banner-slide.ativo {
+        display: block !important;
+    }
+}
+
+.banner-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.banner-indicadores span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cor-indicador-inativo);
+    transition: .25s;
+}
+
+.banner-indicadores span.ativo {
+    width: 22px;
+    border-radius: 99px;
+    background: var(--cor-primaria);
+}
+
+/* ==========================================================
+   BOTÕES DO CARD DE PRODUTO
+   Configuração unificada para Pedir WhatsApp e Ver Opções
+========================================================== */
+
+/* ===== CONFIGURAÇÃO BASE PARA AMBOS OS BOTÕES ===== */
+.informacoes-produto .botao-whatsapp,
+.informacoes-produto .botao-opcoes {
+    /* Reset do estilo nativo do navegador (necessário pro <button> ficar igual ao <a>) */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+
+    /* Tamanho */
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 48px;
+    height: 48px;
+    max-height: 48px;
+
+    /* Espaçamento */
+    padding: 0 16px;
+    margin-top: auto;
+    margin-bottom: 0;
+    gap: 10px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Aparência */
+    border: none;
+    border-radius: 8px 8px 15px 15px;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: var(--cor-branco);
+
+    /* Texto */
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+
+    /* Interação */
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 12px rgba(143, 0, 214, 0.25);
+
+    /* Posição */
+    position: relative;
+    overflow: hidden;
+
+    /* Box sizing */
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex: 1 1 100%;
+}
+
+/* ===== REMOVE BORDA INTERNA DO FIREFOX EM BOTÕES ===== */
+.informacoes-produto .botao-opcoes::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* ===== ÍCONE (apenas no botão WhatsApp) ===== */
+.informacoes-produto .botao-whatsapp i {
+    font-size: 20px;
+    color: var(--cor-branco);
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+/* ===== EFEITO DE BRILHO (AMBOS) ===== */
+.informacoes-produto .botao-whatsapp::before,
+.informacoes-produto .botao-opcoes::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* ===== HOVER (AMBOS) ===== */
+.informacoes-produto .botao-whatsapp:hover,
+.informacoes-produto .botao-opcoes:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(143, 0, 214, 0.35);
+}
+
+.informacoes-produto .botao-whatsapp:hover::before,
+.informacoes-produto .botao-opcoes:hover::before {
+    opacity: 1;
+}
+
+/* ===== ACTIVE (CLIQUE) (AMBOS) ===== */
+.informacoes-produto .botao-whatsapp:active,
+.informacoes-produto .botao-opcoes:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 8px rgba(143, 0, 214, 0.2);
+}
+
+/* ==========================================================
+   CONTAINER DE AÇÕES (para produtos sem variações)
+========================================================== */
+
+.acoes-produto {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    width: 100%;
+    min-height: 48px;
+}
+
+.acoes-produto .botao-whatsapp {
+    flex: 1 1 100%;
+    min-height: 48px;
+    height: 48px;
+    max-height: 48px;
+}
+
+/* ==========================================================
+   RESPONSIVO - MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .informacoes-produto .botao-whatsapp,
+    .informacoes-produto .botao-opcoes {
+        min-height: 42px;
+        height: 42px;
+        max-height: 42px;
+        font-size: 13px;
+        border-radius: 6px 6px 15px 15px;
+        padding: 0 12px;
+    }
+
+    .informacoes-produto .botao-whatsapp i {
+        font-size: 17px;
+    }
+
+    .acoes-produto {
+        min-height: 42px;
+        gap: 10px;
+    }
+
+    .acoes-produto .botao-whatsapp {
+        min-height: 42px;
+        height: 42px;
+        max-height: 42px;
+    }
+}
+
+/* ==========================================================
+   TEMA DARK - AJUSTES
+========================================================== */
+
+body.tema-dark .informacoes-produto .botao-whatsapp,
+body.tema-dark .informacoes-produto .botao-opcoes {
+    background: linear-gradient(135deg, #a855f7, #7c3aed);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+body.tema-dark .informacoes-produto .botao-whatsapp:hover,
+body.tema-dark .informacoes-produto .botao-opcoes:hover {
+    box-shadow: 0 6px 24px rgba(168, 85, 247, 0.45);
+}
+
+body.tema-dark .informacoes-produto .botao-whatsapp:active,
+body.tema-dark .informacoes-produto .botao-opcoes:active {
+    box-shadow: 0 2px 10px rgba(168, 85, 247, 0.25);
+}
+
+/* ==========================================================
+   ESTADO DESABILITADO
+========================================================== */
+
+.informacoes-produto .botao-whatsapp:disabled,
+.informacoes-produto .botao-opcoes:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.informacoes-produto .botao-whatsapp:disabled::before,
+.informacoes-produto .botao-opcoes:disabled::before {
+    opacity: 0;
+}
+
+/* ==========================================================
+   BOTÃO LISTA NO MODAL DE VARIAÇÕES
+========================================================== */
+
+.botao-lista-modal {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(143, 0, 214, 0.25);
+}
+
+.botao-lista-modal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(143, 0, 214, 0.35);
+}
+
+.botao-lista-modal.ativo {
+    background: linear-gradient(135deg, #e53935, #c62828) !important;
+}
+
+.botao-lista-modal.ativo i {
+    color: #fff;
+}
+
+.botao-lista-modal.ativo span {
+    color: #fff;
+}
+
+body.tema-dark .botao-lista-modal {
+    background: linear-gradient(135deg, #a855f7, #7c3aed);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+body.tema-dark .botao-lista-modal.ativo {
+    background: linear-gradient(135deg, #ef5350, #c62828) !important;
+}
+
+/* ==========================================================
+   BOTÃO WHATSAPP NO MODAL DE VARIAÇÕES
+========================================================== */
+
+#botaoWhatsappVariacao {
+    width: 100%;
+    min-height: 56px;
+    height: 56px;
+    margin-top: 20px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: var(--cor-branco);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 12px rgba(143, 0, 214, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Efeito de brilho */
+#botaoWhatsappVariacao::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#botaoWhatsappVariacao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(143, 0, 214, 0.35);
+}
+
+#botaoWhatsappVariacao:hover::before {
+    opacity: 1;
+}
+
+#botaoWhatsappVariacao:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 8px rgba(143, 0, 214, 0.2);
+}
+
+/* Ícone */
+#botaoWhatsappVariacao i {
+    font-size: 22px;
+    color: var(--cor-branco);
+    flex-shrink: 0;
+}
+
+/* ==========================================================
+   TEMA DARK - MODAL
+========================================================== */
+
+body.tema-dark #botaoWhatsappVariacao {
+    background: linear-gradient(135deg, #a855f7, #7c3aed);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+body.tema-dark #botaoWhatsappVariacao:hover {
+    box-shadow: 0 6px 24px rgba(168, 85, 247, 0.45);
+}
+
+body.tema-dark #botaoWhatsappVariacao:active {
+    box-shadow: 0 2px 10px rgba(168, 85, 247, 0.25);
+}
+
+/* ==========================================================
+   RESPONSIVO - MODAL
+========================================================== */
+
+@media (max-width: 768px) {
+    #botaoWhatsappVariacao {
+        min-height: 50px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 8px;
+        padding: 0 16px;
+    }
+
+    #botaoWhatsappVariacao i {
+        font-size: 19px;
+    }
+}

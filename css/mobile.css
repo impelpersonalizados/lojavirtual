@@ -1,0 +1,173 @@
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+.mobile{
+
+    display:none;
+
+}
+
+@media (max-width: 900px) {
+
+    .mobile{
+
+        width:100%;
+        display:flex;
+        align-items:center;
+        gap:12px;
+
+    }
+
+    .pesquisa-mobile{
+
+        flex:1;
+        min-width:0;
+        height:48px;
+        padding:0 12px;
+
+    }
+
+    .pesquisa-mobile input{
+
+        margin:0 10px;
+        font-size:15px;
+
+    }
+
+    .botao-menu{
+
+        width:48px;
+        height:48px;
+        flex-shrink:0;
+        color:var(--cor-branco);
+        font-size:28px;
+
+    }
+
+    .menu-suspenso{
+
+        top:calc(100% + 8px);
+        right:0;
+        left:auto;
+        min-width:220px;
+        border:1px solid var(--cor-borda);
+        overflow:hidden;
+
+    }
+
+}
+
+
+/* ==========================================================
+   PESQUISA MOBILE
+========================================================== */
+
+.pesquisa-mobile{
+
+    flex:1;
+
+    height:54px;
+
+    padding:0 15px;
+
+    display:flex;
+    align-items:center;
+
+    background:var(--cor-branco);
+
+    border-radius:var(--raio-redondo);
+
+}
+
+.pesquisa-mobile button{
+
+    color:var(--cor-primaria);
+
+    font-size:24px;
+
+}
+
+.pesquisa-mobile input{
+
+    flex:1;
+
+    margin:0 15px;
+
+    border:none;
+    outline:none;
+
+    color:var(--cor-primaria);
+
+    background:transparent;
+
+}
+
+.pesquisa-mobile input::placeholder{
+
+    color:var(--cor-primaria);
+
+}
+
+
+/* ==========================================================
+   BOTÃO MENU
+========================================================== */
+
+.botao-menu{
+
+    width:55px;
+    height:55px;
+
+    color:var(--cor-branco);
+
+    font-size:34px;
+
+    background:transparent;
+    border:none;
+    cursor:pointer;
+
+}
+
+.botao-menu.desktop{
+
+    display:flex;
+
+}
+
+.menu-suspenso{
+
+    position:absolute;
+    top:calc(100% + 8px);
+    right:14px;
+    min-width:220px;
+    background:var(--cor-branco);
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    padding:8px 0;
+    display:none;
+    z-index:1100;
+
+}
+
+.menu-suspenso.ativo{
+
+    display:block;
+
+}
+
+.menu-suspenso a{
+
+    display:block;
+    padding:10px 16px;
+    color:var(--cor-primaria);
+    font-weight:600;
+    font-size:15px;
+
+}
+
+.menu-suspenso a:hover{
+
+    background:var(--cor-fundo-secundario);
+
+}

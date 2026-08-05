@@ -1,0 +1,101 @@
+/* ==========================================================
+   MENU LATERAL
+========================================================== */
+
+.menu-lateral{
+
+    position:fixed;
+
+    top:0;
+    right:-320px;
+
+    width:300px;
+    height:100vh;
+
+    background:var(--cor-menu);
+
+    padding-top:80px;
+
+    box-shadow:var(--sombra-media);
+
+    transition:var(--transicao);
+
+    z-index:1000;
+
+}
+
+.menu-lateral.ativo{
+
+    right:0;
+
+}
+
+
+/* ==========================================================
+   LISTA
+========================================================== */
+
+.menu-lateral ul{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.menu-lateral li{
+
+    border-bottom:1px solid var(--cor-borda);
+
+}
+
+.menu-lateral a{
+
+    display:block;
+
+    padding:18px 25px;
+
+    color:var(--cor-texto);
+
+    font-size:17px;
+    font-weight:600;
+
+    transition:var(--transicao);
+
+}
+
+.menu-lateral a:hover{
+
+    background:var(--cor-fundo-secundario);
+
+    color:var(--cor-primaria);
+
+}
+
+
+/* ==========================================================
+   FUNDO
+========================================================== */
+
+.fundo-menu{
+
+    position:fixed;
+
+    inset:0;
+
+    background:var(--cor-overlay);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:var(--transicao);
+
+    z-index:999;
+
+}
+
+.fundo-menu.ativo{
+
+    opacity:1;
+    visibility:visible;
+
+}

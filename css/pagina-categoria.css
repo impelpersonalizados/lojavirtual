@@ -1,0 +1,628 @@
+/* ==========================================================
+   PÁGINA ESPECIAL DE CATEGORIA (SEÇÕES PERSONALIZADAS)
+========================================================== */
+
+/* Evita que padding, textos e elementos internos causem rolagem horizontal. */
+.pagina-categorias,
+.secoes-personalizadas,
+.secao-especial,
+.secao-especial .container,
+.bloco-secao-especial,
+.modal-imagens,
+.slider-wrapper,
+.modal-info,
+.lista-modal-variacoes,
+.opcao-variacao,
+.conteudo-variacao {
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.pagina-categorias,
+.secoes-personalizadas {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+.secoes-personalizadas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.secao-especial {
+    padding: 40px 20px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.secao-especial:last-child {
+    border-bottom: none;
+}
+
+.secao-especial .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.secao-especial .titulo-secao {
+    margin-bottom: 20px;
+}
+
+.secao-especial .titulo-secao h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.secoes-personalizadas .container p {
+    color: var(--cor-texto-claro);
+    font-size: 16px;
+}
+
+/* ==========================================================
+   BLOCO PRINCIPAL (GALERIA + INFORMAÇÕES)
+========================================================== */
+
+.bloco-secao-especial {
+    display: grid;
+    grid-template-columns: minmax(0, 480px) minmax(0, 1fr);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+@media (max-width: 900px) {
+    .bloco-secao-especial {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* ==========================================================
+   GALERIA DE IMAGENS
+========================================================== */
+
+.modal-imagens {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.slider-modal {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 1/1;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid var(--cor-borda);
+    background: var(--cor-superficie-hover);
+}
+
+.slider-modal img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: .25s;
+}
+
+.slider-modal img.ativo {
+    opacity: 1;
+}
+
+/* ===== SETAS DE NAVEGAÇÃO ===== */
+
+.seta-galeria {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: var(--raio-redondo);
+    background: rgba(0, 0, 0, .38);
+    color: var(--cor-branco);
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background var(--transicao), transform .2s;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.seta-galeria:hover {
+    background: var(--cor-acento-forte);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.seta-galeria:active {
+    transform: translateY(-50%) scale(.96);
+}
+
+.seta-anterior {
+    left: 14px;
+}
+
+.seta-proxima {
+    right: 14px;
+}
+
+@media (max-width: 480px) {
+    .seta-galeria {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .seta-anterior {
+        left: 8px;
+    }
+
+    .seta-proxima {
+        right: 8px;
+    }
+}
+
+/* ===== MINIATURAS (LINHA ÚNICA COM ROLAGEM) ===== */
+
+.indicadores-modal {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 4px 2px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+.indicadores-modal::-webkit-scrollbar {
+    height: 6px;
+}
+
+.indicadores-modal::-webkit-scrollbar-thumb {
+    background: var(--cor-acento);
+    border-radius: 10px;
+}
+
+.indicadores-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.indicadores-modal img {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--cor-borda);
+    cursor: pointer;
+    opacity: .65;
+    transition: .2s;
+}
+
+.indicadores-modal img:hover {
+    opacity: 1;
+}
+
+.indicadores-modal img.ativo {
+    border-color: var(--cor-acento-forte);
+    opacity: 1;
+}
+
+/* ==========================================================
+   INFORMAÇÕES / VARIAÇÕES
+========================================================== */
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.modal-info h3 {
+    color: var(--cor-texto);
+}
+
+.lista-modal-variacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.opcao-variacao {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 18px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: .25s;
+    background: var(--cor-card);
+}
+
+.opcao-variacao:hover {
+    border-color: var(--cor-acento-forte);
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-leve);
+}
+
+.opcao-variacao.selecionada {
+    border-color: var(--cor-acento-forte);
+    background: var(--cor-acento-fundo);
+}
+
+.opcao-variacao input {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--cor-acento-forte);
+    flex-shrink: 0;
+}
+
+.conteudo-variacao {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.conteudo-variacao strong {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cor-texto);
+    overflow-wrap: anywhere;
+}
+
+.conteudo-variacao small {
+    margin-top: 5px;
+    color: var(--cor-texto-claro);
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.preco-variacao {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--cor-acento-texto);
+    white-space: nowrap;
+}
+
+/* ==========================================================
+   BOTÃO "PEDIR NO WHATSAPP"
+   (idêntico ao usado nos cards de produto do restante do site)
+========================================================== */
+
+.secao-especial .botao-whatsapp {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 48px;
+    height: 48px;
+    max-height: 48px;
+    padding: 0 16px;
+    margin-top: auto;
+    margin-bottom: 0;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px 8px 15px 15px;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: var(--cor-branco);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 12px rgba(143, 0, 214, 0.25);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.secao-especial .botao-whatsapp::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.secao-especial .botao-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(143, 0, 214, 0.35);
+}
+
+.secao-especial .botao-whatsapp:hover::before {
+    opacity: 1;
+}
+
+.secao-especial .botao-whatsapp:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 8px rgba(143, 0, 214, 0.2);
+}
+
+body.tema-dark .secao-especial .botao-whatsapp {
+    background: linear-gradient(135deg, #a855f7, #7c3aed);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+body.tema-dark .secao-especial .botao-whatsapp:hover {
+    box-shadow: 0 6px 24px rgba(168, 85, 247, 0.45);
+}
+
+body.tema-dark .secao-especial .botao-whatsapp:active {
+    box-shadow: 0 2px 10px rgba(168, 85, 247, 0.25);
+}
+
+@media (max-width: 768px) {
+    .secao-especial .botao-whatsapp {
+        min-height: 42px;
+        height: 42px;
+        max-height: 42px;
+        font-size: 13px;
+        border-radius: 6px 6px 15px 15px;
+        padding: 0 12px;
+    }
+}
+/* ==========================================================
+   AJUSTES RESPONSIVOS PARA CELULAR
+========================================================== */
+@media (max-width: 768px) {
+    .secoes-personalizadas {
+        gap: 0;
+        padding-bottom: 24px;
+    }
+
+    .secao-especial {
+        width: 100%;
+        padding: 26px 14px;
+    }
+
+    .secao-especial .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .secao-especial .titulo-secao {
+        margin-bottom: 16px;
+    }
+
+    .secao-especial .titulo-secao h2 {
+        margin: 0;
+        font-size: clamp(20px, 6vw, 24px);
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+
+    .secoes-personalizadas .container p {
+        font-size: 14px;
+        line-height: 1.55;
+        overflow-wrap: anywhere;
+    }
+
+    .bloco-secao-especial {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .modal-imagens {
+        margin-top: 0;
+    }
+
+    .slider-modal {
+        max-width: min(100%, 480px);
+        border-radius: 14px;
+    }
+
+    .indicadores-modal {
+        max-width: 100%;
+        margin-top: 10px;
+        padding-bottom: 8px;
+        overscroll-behavior-inline: contain;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x proximity;
+    }
+
+    .indicadores-modal img {
+        width: 52px;
+        height: 52px;
+        scroll-snap-align: start;
+    }
+
+    .modal-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-info h3 {
+        margin-top: 0;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+    }
+
+    .lista-modal-variacoes {
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .opcao-variacao {
+        width: 100%;
+        gap: 12px;
+        padding: 13px 12px;
+        border-radius: 12px;
+    }
+
+    .opcao-variacao input {
+        width: 18px;
+        height: 18px;
+    }
+
+    .conteudo-variacao strong {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .conteudo-variacao small {
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .preco-variacao {
+        flex: 0 1 auto;
+        max-width: 40%;
+        font-size: 14px;
+        text-align: right;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .secao-especial .botao-whatsapp {
+        min-height: 44px;
+        height: auto;
+        max-height: none;
+        margin-top: 0;
+        padding: 11px 12px;
+        border-radius: 10px;
+        font-size: 13px;
+        line-height: 1.25;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .secao-especial {
+        padding: 22px 10px;
+    }
+
+    .slider-modal {
+        border-radius: 12px;
+    }
+
+    .opcao-variacao {
+        display: grid;
+        grid-template-columns: 20px minmax(0, 1fr);
+        align-items: start;
+        column-gap: 10px;
+        row-gap: 8px;
+    }
+
+    .opcao-variacao input {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        margin-top: 1px;
+    }
+
+    .conteudo-variacao {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .preco-variacao {
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 100%;
+        text-align: left;
+        line-height: 1.25;
+    }
+}
+
+@media (hover: none) {
+    .opcao-variacao:hover,
+    .secao-especial .botao-whatsapp:hover {
+        transform: none;
+    }
+}
+/* ==========================================================
+   NOVA SEÇÃO COM DUAS GALERIAS
+========================================================== */
+.duas-galerias-especiais {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.galeria-especial {
+    min-width: 0;
+}
+
+.titulo-galeria-especial {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.galeria-vazia {
+    display: grid;
+    place-items: center;
+    min-height: 260px;
+    padding: 20px;
+    border: 1px dashed rgba(128, 128, 128, .45);
+    border-radius: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.secao-duas-galerias .bloco-secao-especial {
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 0.8fr);
+    align-items: start;
+}
+
+.secao-duas-galerias .slider-modal {
+    max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .secao-duas-galerias .bloco-secao-especial {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .duas-galerias-especiais {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .titulo-galeria-especial {
+        font-size: 16px;
+    }
+
+    .galeria-vazia {
+        min-height: 200px;
+    }
+}

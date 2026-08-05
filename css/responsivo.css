@@ -1,0 +1,150 @@
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
+
+@media(max-width:900px) {
+
+    .cabecalho {
+
+        height: auto;
+
+    }
+
+    .barra-superior {
+
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        padding: 10px;
+
+        min-height: 60px;
+
+        gap: 6px;
+
+    }
+
+    .barra-superior .logo img {
+
+        height: 34px;
+
+    }
+
+    .barra-superior .pesquisa-desktop {
+
+        flex: 1;
+
+        min-width: 0;
+
+        width: auto;
+
+        height: 42px;
+
+        padding: 0 10px;
+
+        overflow: hidden;
+
+    }
+
+    .barra-superior .pesquisa-desktop input {
+
+        width: 100%;
+        font-size: 14px;
+
+    }
+
+    .barra-superior .pesquisa-desktop button {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+    }
+
+    .barra-navegacao {
+
+        display: flex;
+
+    }
+
+    .menu-navegacao {
+
+        display: none;
+
+    }
+
+    .barra-navegacao.oculta-mobile {
+
+        max-height: 0 !important;
+        min-height: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        opacity: 0 !important;
+        overflow: hidden !important;
+        pointer-events: none !important;
+        transform: translateY(-8px) !important;
+
+    }
+
+    .menu-suspenso.desktop {
+
+        display: none;
+
+    }
+
+    .botao-menu.desktop {
+
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--cor-fundo-secundario);
+        color: var(--cor-primaria);
+        flex-shrink: 0;
+
+    }
+
+    .mobile {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+    }
+
+}
+
+
+/* ##########################################################
+   ## CATEGORIAS
+########################################################## */
+
+@media (max-width:768px) {
+
+    .card-categoria {
+        padding: 10px;
+    }
+
+    .categoria-imagem {
+        width: 140px;
+        height: 80px;
+    }
+
+    .categoria-info {
+        padding: 0 14px;
+    }
+
+    .categoria-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .categoria-info span {
+        font-size: .95rem;
+    }
+
+}

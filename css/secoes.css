@@ -1,0 +1,103 @@
+/* ==========================================================
+   SEÇÕES DO CATÁLOGO - IMPEL
+========================================================== */
+
+/* Seção principal */
+.secao-produtos {
+    width: 100%;
+    padding: 40px 20px;
+    background: var(--cor-fundo);
+}
+
+/* Container */
+.secao-produtos .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Título da seção */
+.titulo-secao h2 {
+    font-size: 26px;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+/* ==========================================================
+   CARROSSEL
+========================================================== */
+
+.carrossel-produtos {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Área dos cards */
+.area-carrossel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+/* Esconde scroll */
+.area-carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card do produto */
+.card-produto {
+    min-width: 180px;
+    background: var(--cor-card);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: var(--sombra-leve);
+    flex-shrink: 0;
+}
+
+/* Imagem */
+.card-produto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Nome */
+.card-produto h3 {
+    font-size: 14px;
+    margin-top: 8px;
+    color: var(--cor-texto);
+}
+
+/* Preço */
+.card-produto span {
+    color: var(--cor-acento);
+    font-weight: bold;
+}
+
+/* ==========================================================
+   BOTÕES DO CARROSSEL
+========================================================== */
+
+.botao-carrossel {
+    background: var(--cor-primaria);
+    color: var(--cor-texto-gradiente);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-carrossel:hover {
+    background:var(--cor-secundaria);
+}
