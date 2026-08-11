@@ -1,105 +1,166 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title id="titulo-aba">IMPEL - Catálogo</title>
-<!-- CSS -->
-<link href="css/estilo.css" rel="stylesheet"/>
-<link href="css/pagina-categoria.css" rel="stylesheet"/>
-<!-- Ícones -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="favicon.png" rel="icon" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo-aba">IMPEL - Catálogo</title>
+
+    <!-- CSS (arquivos separados, carregados em paralelo -
+         antes eram @import em cadeia dentro de estilo.css,
+         o que forçava o navegador a baixar um de cada vez) -->
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/menu-lateral.css">
+    <link rel="stylesheet" href="css/secoes.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="stylesheet" href="css/categoria.css">
+    <link rel="stylesheet" href="css/lista-pedidos.css">
+    <link rel="stylesheet" href="css/autocomplete-busca.css">
+    <link rel="stylesheet" href="css/pagina-categoria.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="//res.cloudinary.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
 </head>
+
 <body>
-<!-- ===== Barra de Navegação ===== -->
-<header class="cabecalho">
-<div class="barra-superior">
-<a class="logo" href="index.html">
-<img alt="IMPEL" id="logo-imagem" src="logo.png"/>
-</a>
-<div class="pesquisa-desktop">
-<input placeholder="Digite o que você procura" type="text"/>
-<button>
-<i class="fa-solid fa-magnifying-glass"></i>
-</button>
-</div>
-<button aria-label="Alternar tema" class="botao-tema" id="botao-tema">
-<i class="fa-solid fa-moon"></i>
-</button>
-<a class="botao-lista-topo" href="lista-pedidos.html">
-<i class="fa-solid fa-heart"></i>
-<span class="texto-lista">
+
+    <!-- ===== Barra de Navegação ===== -->
+    <header class="cabecalho">
+
+        <div class="barra-superior">
+
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="IMPEL" id="logo-imagem">
+            </a>
+
+            <div class="pesquisa-desktop">
+                <input type="text" placeholder="Digite o que você procura">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <button id="botao-tema" class="botao-tema" aria-label="Alternar tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <a href="lista-pedidos.html" class="botao-lista-topo">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span class="texto-lista">
 
                     Minha Lista
 
                 </span>
-<span class="contador-lista" id="contador-lista">
+
+                <span id="contador-lista" class="contador-lista">
 
                     0
 
                 </span>
-</a>
-<button aria-label="Abrir categorias" class="botao-menu desktop" id="botao-menu-categorias">
-<i class="fa-solid fa-bars"></i>
-</button>
-<div class="menu-suspenso desktop" id="menu-suspenso-categorias-desktop"></div>
-<div class="menu-suspenso" id="menu-suspenso-categorias-mobile"></div>
-</div>
-</header>
-<header class="cabecalho-categorias">
-<nav class="barra-navegacao">
-<ul class="menu-navegacao" id="menu-navegacao"></ul>
-<div class="mobile">
-<div class="pesquisa-mobile">
-<button>
-<i class="fa-solid fa-chevron-down"></i>
-</button>
-<input placeholder="O que você procura?" type="text"/>
-<button>
-<i class="fa-solid fa-magnifying-glass"></i>
-</button>
-</div>
-<button aria-label="Abrir categorias" class="botao-menu" id="botao-menu-mobile">
-<i class="fa-solid fa-bars"></i>
-</button>
-</div>
-</nav>
-</header>
-<main class="pagina-categorias"><div style="
-min-height:70vh;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-gap:24px;
-font-family:Montserrat,sans-serif;
-text-align:center;
-"><h1 style="font-size:3rem;color:#666;margin:0;">Página em manutenção</h1><a href="index.html" style="
-display:inline-block;
-padding:14px 28px;
-background:#0d6efd;
-color:#fff;
-text-decoration:none;
-border-radius:10px;
-font-weight:600;
-transition:.2s;
-">← Voltar para a página inicial</a></div></main>
-<!-- ==========================================================
+
+            </a>
+
+            <button class="botao-menu desktop" id="botao-menu-categorias" aria-label="Abrir categorias">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="menu-suspenso desktop" id="menu-suspenso-categorias-desktop"></div>
+            <div class="menu-suspenso" id="menu-suspenso-categorias-mobile"></div>
+
+        </div>
+
+    </header>
+
+    <header class="cabecalho-categorias">
+        <nav class="barra-navegacao">
+            <ul class="menu-navegacao" id="menu-navegacao"></ul>
+
+            <div class="mobile">
+                <div class="pesquisa-mobile">
+                    <button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <input type="text" placeholder="O que você procura?">
+
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <button class="botao-menu" id="botao-menu-mobile" aria-label="Abrir categorias">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pagina-categorias">
+
+        <header class="titulo-secao-categorias">
+
+            <h1 id="titulo-pagina-categoria">Catálogo</h1>
+
+            <div class="filtros-temas-container">
+                <div id="filtros-temas" class="filtros-temas" aria-label="Filtrar produtos por tema"></div>
+            </div>
+
+        </header>
+
+        <div id="secoes-personalizadas" class="secoes-personalizadas">
+
+            <div class="container">
+                <p>Carregando produtos...</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ==========================================================
      MENU LATERAL MOBILE
 ========================================================== -->
-<aside class="menu-lateral" id="menu-lateral">
-<ul id="menu-lateral-lista"></ul>
-</aside>
-<div class="fundo-menu" id="fundo-menu"></div>
-<script src="js/config.js"></script>
-<script src="js/tema.js"></script>
-<script src="js/script.js"></script>
-<script src="js/autocomplete-busca.js"></script>
-<script src="js/lista-pedidos.js"></script>
+
+    <aside class="menu-lateral" id="menu-lateral">
+
+        <ul id="menu-lateral-lista"></ul>
+
+    </aside>
+
+    <div class="fundo-menu" id="fundo-menu"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/tema.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/autocomplete-busca.js"></script>
+    <script src="js/lista-pedidos.js"></script>
+    <script src="js/pagina-categoria.js"></script>
+
 </body>
+
 </html>
