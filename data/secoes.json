@@ -3,7 +3,7 @@
         "id": "sec_1785721688401",
         "categoria": "agendas e cadernos",
         "nome": "Agendas e Cadernos Femininos",
-        "mensagemWhatsapp": "",
+        "mensagemWhatsapp": "Olá! Tenho interesse na(o) {opcao} (COD. F.{imagem_produto})",
         "imagens": [
             {
                 "nome": "AG100",
@@ -237,7 +237,7 @@
         "tipo": "duas-galerias",
         "tituloGaleriaPrincipal": "Selecione uma",
         "tituloGaleriaVariacao": "Selecione o Modelo de caderno",
-        "mensagemWhatsapp": "",
+        "mensagemWhatsapp": "Olá! Tenho interesse na(o) {opcao} (COD. M.{imagem_produto})",
         "imagens": [
             {
                 "nome": "AG100",
