@@ -2,9 +2,18 @@
 
 let secoesCategoriaAtual = [];
 let temasSelecionadosPagina = new Set();
+let termoBuscaPagina = "";
 
 function normalizarTemaPagina(tema) {
     return (tema || "").trim().toLocaleLowerCase("pt-BR");
+}
+
+function normalizarBuscaPagina(texto) {
+    return String(texto || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toLocaleLowerCase("pt-BR");
 }
 
 function escaparHtml(texto) {
@@ -13,21 +22,104 @@ function escaparHtml(texto) {
     return div.innerHTML;
 }
 
-function obterImagensVariacao(secao, variacao, usarFallback = true) {
-    if (variacao && Array.isArray(variacao.imagens) && variacao.imagens.length) {
-        return variacao.imagens;
-    }
-    return usarFallback ? (secao.imagens || []) : [];
+function escaparAtributo(texto) {
+    return String(texto ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
 }
 
-function obterUrlMiniatura(imagem) {
+function obterImagensValidas(imagens) {
+    if (!Array.isArray(imagens)) return [];
+
+    return imagens
+        .filter(imagem => imagem && typeof imagem.url === "string" && imagem.url.trim())
+        .map(imagem => ({
+            ...imagem,
+            nome: String(imagem.nome || "Imagem do produto"),
+            url: imagem.url.trim()
+        }));
+}
+
+function obterImagensVariacao(secao, variacao, usarFallback = true) {
+    const imagensVariacao = obterImagensValidas(variacao?.imagens);
+    if (imagensVariacao.length) return imagensVariacao;
+    return usarFallback ? obterImagensValidas(secao.imagens) : [];
+}
+
+function aplicarTransformacaoCloudinary(url, transformacao) {
+    if (!url || !/res\.cloudinary\.com\//i.test(url) || !url.includes("/upload/")) {
+        return url || "";
+    }
+
+    return url.replace("/upload/", `/upload/${transformacao}/`);
+}
+
+function obterUrlMiniaturaPagina(imagem) {
     if (!imagem) return "";
     if (imagem.miniatura) return imagem.miniatura;
-    const url = imagem.url || "";
-    if (/res\.cloudinary\.com\//i.test(url) && url.includes("/upload/")) {
-        return url.replace("/upload/", "/upload/w_160,h_160,c_fill,q_auto:eco,f_auto,dpr_auto/");
+    return aplicarTransformacaoCloudinary(
+        imagem.url || "",
+        "w_160,h_160,c_fill,g_auto,q_auto:eco,f_auto,dpr_auto"
+    );
+}
+
+function obterUrlImagemPrincipal(imagem) {
+    return aplicarTransformacaoCloudinary(
+        imagem?.url || "",
+        "w_1000,h_1000,c_limit,q_auto:good,f_auto"
+    );
+}
+
+const IMAGEM_INDISPONIVEL = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+        <rect width="600" height="600" fill="#f3f4f6"/>
+        <g fill="none" stroke="#9ca3af" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="135" y="155" width="330" height="255" rx="24"/>
+            <circle cx="240" cy="245" r="35"/>
+            <path d="M160 380l105-100 70 65 45-42 60 77"/>
+        </g>
+        <text x="300" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#6b7280">Imagem indisponível</text>
+    </svg>
+`)}`;
+
+function configurarFallbackImagem(img) {
+    if (!img || img.dataset.fallbackConfigurado === "1") return;
+    img.dataset.fallbackConfigurado = "1";
+
+    img.addEventListener("error", () => {
+        const original = img.dataset.originalSrc || "";
+        const atual = img.getAttribute("src") || "";
+
+        if (original && img.dataset.fallbackOriginalUsado !== "1" && atual !== original) {
+            img.dataset.fallbackOriginalUsado = "1";
+            img.src = original;
+            return;
+        }
+
+        console.warn("Não foi possível carregar a imagem:", original || atual);
+        img.classList.add("imagem-com-erro");
+
+        if (img.classList.contains("miniatura-galeria")) {
+            img.hidden = true;
+            return;
+        }
+
+        if (atual !== IMAGEM_INDISPONIVEL) {
+            img.src = IMAGEM_INDISPONIVEL;
+        }
+    });
+}
+
+function carregarImagemElemento(img) {
+    if (!img) return;
+    configurarFallbackImagem(img);
+
+    if (!img.getAttribute("src") && img.dataset.src) {
+        img.src = img.dataset.src;
     }
-    return url;
 }
 
 function formatarPreco(valor) {
@@ -59,21 +151,33 @@ function criarSlidesHTML(imagens) {
     if (!imagens.length) {
         return '<div class="galeria-vazia">Nenhuma imagem cadastrada.</div>';
     }
-    return imagens.map((imagem, indice) => `
-        <img src="${imagem.url}" alt="${escaparHtml(imagem.nome)}"
-             class="${indice === 0 ? "ativo" : ""}" data-indice="${indice}"
+
+    return imagens.map((imagem, indice) => {
+        const urlOtimizada = obterUrlImagemPrincipal(imagem);
+        const urlOriginal = imagem.url || "";
+        const fonteInicial = `data-src="${escaparAtributo(urlOtimizada)}"`;
+
+        return `
+        <img ${fonteInicial} data-original-src="${escaparAtributo(urlOriginal)}"
+             alt="${escaparAtributo(imagem.nome)}"
+             class="imagem-slide ${indice === 0 ? "ativo" : ""}" data-indice="${indice}"
              decoding="async" loading="${indice === 0 ? "eager" : "lazy"}"
-             fetchpriority="${indice === 0 ? "high" : "low"}">
-    `).join("");
+             fetchpriority="${indice === 0 ? "high" : "low"}">`;
+    }).join("");
 }
 
 function criarIndicadoresHTML(imagens) {
-    return imagens.map((imagem, indice) => `
-        <img src="${obterUrlMiniatura(imagem)}" alt="${escaparHtml(imagem.nome)}"
-             title="${escaparHtml(imagem.nome)}" class="${indice === 0 ? "ativo" : ""}"
+    return imagens.map((imagem, indice) => {
+        const miniatura = obterUrlMiniaturaPagina(imagem);
+        const fonteInicial = `data-src="${escaparAtributo(miniatura)}"`;
+
+        return `
+        <img ${fonteInicial} data-original-src="${escaparAtributo(imagem.url || "")}"
+             alt="${escaparAtributo(imagem.nome)}" title="${escaparAtributo(imagem.nome)}"
+             class="miniatura-galeria ${indice === 0 ? "ativo" : ""}"
              data-indice="${indice}" width="56" height="56" loading="lazy"
-             decoding="async" fetchpriority="low">
-    `).join("");
+             decoding="async" fetchpriority="low">`;
+    }).join("");
 }
 
 function criarGaleriaHTML(secaoId, chave, titulo, imagens) {
@@ -109,7 +213,7 @@ function criarSecaoHTML(secao) {
 
     const areaGalerias = duasGalerias
         ? `<div class="duas-galerias-especiais">
-              ${criarGaleriaHTML(secao.id, "produto", secao.tituloGaleriaPrincipal || "Fotos do Produto", secao.imagens || [])}
+              ${criarGaleriaHTML(secao.id, "produto", secao.tituloGaleriaPrincipal || "Fotos do Produto", obterImagensValidas(secao.imagens))}
               ${criarGaleriaHTML(secao.id, "variacao", secao.tituloGaleriaVariacao || "Fotos da Variação Selecionada", obterImagensVariacao(secao, variacaoInicial, false))}
            </div>`
         : criarGaleriaHTML(secao.id, "padrao", "", obterImagensVariacao(secao, variacaoInicial));
@@ -131,12 +235,19 @@ function criarSecaoHTML(secao) {
 }
 
 function criarControladorGaleria(elemento, imagensIniciais, aoSelecionar) {
+    if (!elemento) {
+        return { definirImagens() {}, imagemAtual() { return null; } };
+    }
+
     const slider = elemento.querySelector(".slider-modal");
     const indicadores = elemento.querySelector(".indicadores-modal");
     const setas = elemento.querySelectorAll(".seta-galeria");
-    const estado = { imagens: imagensIniciais || [], indice: 0 };
+    const estado = { imagens: obterImagensValidas(imagensIniciais), indice: 0 };
+    let observadorMiniaturas = null;
 
-    function imagemAtual() { return estado.imagens[estado.indice] || null; }
+    function imagemAtual() {
+        return estado.imagens[estado.indice] || null;
+    }
 
     function atualizarControles() {
         const mostrar = estado.imagens.length > 1;
@@ -144,34 +255,93 @@ function criarControladorGaleria(elemento, imagensIniciais, aoSelecionar) {
         if (indicadores) indicadores.style.display = mostrar ? "flex" : "none";
     }
 
+    function carregarSlide(indice) {
+        const img = slider?.querySelector(`img[data-indice="${indice}"]`);
+        carregarImagemElemento(img);
+    }
+
+    function prepararSlides() {
+        slider?.querySelectorAll("img.imagem-slide").forEach(configurarFallbackImagem);
+        carregarSlide(estado.indice);
+    }
+
+    function prepararMiniaturas() {
+        observadorMiniaturas?.disconnect();
+        observadorMiniaturas = null;
+
+        const miniaturas = Array.from(indicadores?.querySelectorAll("img.miniatura-galeria") || []);
+        miniaturas.forEach(configurarFallbackImagem);
+        carregarImagemElemento(miniaturas[estado.indice]);
+
+        if (!("IntersectionObserver" in window)) {
+            miniaturas.forEach(carregarImagemElemento);
+            return;
+        }
+
+        observadorMiniaturas = new IntersectionObserver(entradas => {
+            entradas.forEach(entrada => {
+                if (!entrada.isIntersecting) return;
+                carregarImagemElemento(entrada.target);
+                observadorMiniaturas?.unobserve(entrada.target);
+            });
+        }, { root: null, rootMargin: "300px 120px", threshold: 0.01 });
+
+        miniaturas.forEach(img => {
+            if (img.getAttribute("src")) return;
+            observadorMiniaturas.observe(img);
+        });
+    }
+
     function ligarMiniaturas() {
-        indicadores?.querySelectorAll("img").forEach(img => {
+        indicadores?.querySelectorAll("img.miniatura-galeria").forEach(img => {
             img.addEventListener("click", () => selecionar(Number(img.dataset.indice)));
         });
+        prepararMiniaturas();
     }
 
     function selecionar(indice) {
         if (!estado.imagens.length) return;
         if (indice < 0) indice = estado.imagens.length - 1;
         if (indice >= estado.imagens.length) indice = 0;
+
         estado.indice = indice;
-        slider.querySelectorAll("img").forEach(img => img.classList.toggle("ativo", Number(img.dataset.indice) === indice));
-        indicadores?.querySelectorAll("img").forEach(img => img.classList.toggle("ativo", Number(img.dataset.indice) === indice));
-        indicadores?.querySelector(`img[data-indice="${indice}"]`)?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+        carregarSlide(indice);
+
+        // Depois da escolha do usuário, deixa apenas as vizinhas prontas.
+        if (estado.imagens.length > 1) {
+            carregarSlide((indice + 1) % estado.imagens.length);
+            carregarSlide((indice - 1 + estado.imagens.length) % estado.imagens.length);
+        }
+
+        slider?.querySelectorAll("img.imagem-slide").forEach(img => {
+            img.classList.toggle("ativo", Number(img.dataset.indice) === indice);
+        });
+        indicadores?.querySelectorAll("img.miniatura-galeria").forEach(img => {
+            img.classList.toggle("ativo", Number(img.dataset.indice) === indice);
+        });
+
+        const miniaturaSelecionada = indicadores?.querySelector(`img[data-indice="${indice}"]`);
+        carregarImagemElemento(miniaturaSelecionada);
+        miniaturaSelecionada?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
         aoSelecionar?.(imagemAtual());
     }
 
     function definirImagens(imagens) {
-        estado.imagens = imagens || [];
+        estado.imagens = obterImagensValidas(imagens);
         estado.indice = 0;
-        slider.innerHTML = criarSlidesHTML(estado.imagens);
+        if (slider) slider.innerHTML = criarSlidesHTML(estado.imagens);
         if (indicadores) indicadores.innerHTML = criarIndicadoresHTML(estado.imagens);
+        prepararSlides();
         ligarMiniaturas();
         atualizarControles();
         aoSelecionar?.(imagemAtual());
     }
 
-    setas.forEach(seta => seta.addEventListener("click", () => selecionar(estado.indice + Number(seta.dataset.direcao))));
+    setas.forEach(seta => {
+        seta.addEventListener("click", () => selecionar(estado.indice + Number(seta.dataset.direcao)));
+    });
+
+    prepararSlides();
     ligarMiniaturas();
     atualizarControles();
 
@@ -187,7 +357,7 @@ function inicializarSecao(secao) {
     const botaoWhatsapp = raiz.querySelector(".botao-whatsapp");
     const listaVariacoes = raiz.querySelector(".lista-modal-variacoes");
     let variacaoAtual = variacoes[0] || null;
-    let imagemProduto = (secao.imagens || [])[0] || null;
+    let imagemProduto = obterImagensValidas(secao.imagens)[0] || null;
     let imagemVariacao = duasGalerias
         ? (obterImagensVariacao(secao, variacaoAtual, false)[0] || null)
         : (obterImagensVariacao(secao, variacaoAtual)[0] || null);
@@ -204,7 +374,7 @@ function inicializarSecao(secao) {
     if (duasGalerias) {
         galeriaProduto = criarControladorGaleria(
             raiz.querySelector('[data-galeria="produto"]'),
-            secao.imagens || [],
+            obterImagensValidas(secao.imagens),
             imagem => { imagemProduto = imagem; atualizarWhatsapp(); }
         );
         galeriaVariacao = criarControladorGaleria(
@@ -257,23 +427,87 @@ function renderizarSecoesNaTela(secoes) {
         return;
     }
 
-    contentor.innerHTML = secoes.map(criarSecaoHTML).join("");
-    secoes.forEach(inicializarSecao);
+    // A primeira seção é montada de imediato (evita tela em branco no topo
+    // enquanto o usuário ainda não rolou a página).
+    //
+    // As demais seções só são montadas (HTML + galerias) quando chegam perto
+    // da tela. Isso evita criar de uma vez centenas de elementos <img> de
+    // seções que estão lá embaixo — algumas variações têm mais de 100 fotos.
+    const [primeiraSecao, ...demaisSecoes] = secoes;
+
+    const placeholdersHTML = demaisSecoes
+        .map(secao => `<div class="placeholder-secao-especial" data-secao-lazy="${secao.id}"></div>`)
+        .join("");
+
+    contentor.innerHTML = criarSecaoHTML(primeiraSecao) + placeholdersHTML;
+    inicializarSecao(primeiraSecao);
+
+    if (!demaisSecoes.length) return;
+
+    function montarSecaoNoPlaceholder(placeholder, secao) {
+        placeholder.outerHTML = criarSecaoHTML(secao);
+        inicializarSecao(secao);
+    }
+
+    if (!("IntersectionObserver" in window)) {
+        // Sem suporte ao IntersectionObserver: mantém o comportamento antigo.
+        demaisSecoes.forEach(secao => {
+            const placeholder = contentor.querySelector(`[data-secao-lazy="${secao.id}"]`);
+            if (placeholder) montarSecaoNoPlaceholder(placeholder, secao);
+        });
+        return;
+    }
+
+    const secoesPorId = new Map(demaisSecoes.map(secao => [secao.id, secao]));
+
+    const observadorSecoes = new IntersectionObserver((entradas, obs) => {
+        entradas.forEach(entrada => {
+            if (!entrada.isIntersecting) return;
+            obs.unobserve(entrada.target);
+            const secao = secoesPorId.get(entrada.target.dataset.secaoLazy);
+            if (secao) montarSecaoNoPlaceholder(entrada.target, secao);
+        });
+    }, { root: null, rootMargin: "600px 0px", threshold: 0.01 });
+
+    contentor.querySelectorAll("[data-secao-lazy]").forEach(placeholder => {
+        observadorSecoes.observe(placeholder);
+    });
 }
 
 function aplicarFiltroTemasPagina() {
     let secoesFiltradas = secoesCategoriaAtual;
 
     if (temasSelecionadosPagina.size > 0) {
-        secoesFiltradas = secoesCategoriaAtual.filter(secao =>
+        secoesFiltradas = secoesFiltradas.filter(secao =>
             (secao.temas || []).some(tema =>
                 temasSelecionadosPagina.has(normalizarTemaPagina(tema))
             )
         );
     }
 
+    if (termoBuscaPagina) {
+        secoesFiltradas = secoesFiltradas.filter(secao => {
+            const textoPesquisavel = [
+                secao.nome,
+                ...(secao.temas || []),
+                ...(secao.variacoes || []).map(variacao => variacao.nome),
+                ...obterImagensValidas(secao.imagens).map(imagem => imagem.nome),
+                ...(secao.variacoes || []).flatMap(variacao =>
+                    obterImagensValidas(variacao.imagens).map(imagem => imagem.nome)
+                )
+            ].join(" ");
+
+            return normalizarBuscaPagina(textoPesquisavel).includes(termoBuscaPagina);
+        });
+    }
+
     renderizarSecoesNaTela(secoesFiltradas);
 }
+
+window.buscarProdutosCatalogo = function buscarProdutosPaginaEspecial(termo) {
+    termoBuscaPagina = normalizarBuscaPagina(termo);
+    aplicarFiltroTemasPagina();
+};
 
 function atualizarBotoesTemasPagina() {
     document.querySelectorAll("#filtros-temas .filtro-tema").forEach(botao => {
@@ -328,6 +562,22 @@ function renderizarFiltrosTemasPagina(temas) {
     atualizarBotoesTemasPagina();
 }
 
+async function carregarJsonPagina(caminho, opcional = false) {
+    try {
+        const resposta = await fetch(caminho, { cache: "no-store" });
+        if (!resposta.ok) {
+            throw new Error(`${caminho}: HTTP ${resposta.status}`);
+        }
+        return await resposta.json();
+    } catch (erro) {
+        if (opcional) {
+            console.warn(`Arquivo opcional não carregado (${caminho}):`, erro);
+            return [];
+        }
+        throw erro;
+    }
+}
+
 async function carregarPaginaCategoria() {
     const categoriaId = new URLSearchParams(window.location.search).get("categoria");
     const contentor = document.getElementById("secoes-personalizadas");
@@ -341,9 +591,9 @@ async function carregarPaginaCategoria() {
 
     try {
         const [categorias, secoes, temas] = await Promise.all([
-            fetch("data/categorias.json").then(r => r.json()),
-            fetch("data/secoes.json").then(r => r.json()),
-            fetch("data/temas-paginas.json").then(r => r.ok ? r.json() : [])
+            carregarJsonPagina("data/categorias.json"),
+            carregarJsonPagina("data/secoes.json"),
+            carregarJsonPagina("data/temas-paginas.json", true)
         ]);
         const categoria = categorias.find(c => c.id === categoriaId);
         const nomeCategoria = categoria ? categoria.nome : categoriaId;
@@ -354,6 +604,7 @@ async function carregarPaginaCategoria() {
 
         secoesCategoriaAtual = secoesCategoria;
         temasSelecionadosPagina = new Set();
+        termoBuscaPagina = "";
 
         if (!secoesCategoria.length) {
             contentor.innerHTML = '<div class="container"><p>Nenhum produto cadastrado nesta página especial ainda.</p></div>';
