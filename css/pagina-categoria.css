@@ -2,6 +2,19 @@
    PÁGINA ESPECIAL DE CATEGORIA (SEÇÕES PERSONALIZADAS)
 ========================================================== */
 
+/* Reserva o espaço da seção antes dela ser montada (carregamento
+   sob demanda via IntersectionObserver em pagina-categoria.js),
+   evitando salto de layout quando a seção real entra no lugar. */
+.placeholder-secao-especial {
+    min-height: 520px;
+}
+
+@media (max-width: 768px) {
+    .placeholder-secao-especial {
+        min-height: 720px;
+    }
+}
+
 /* Evita que padding, textos e elementos internos causem rolagem horizontal. */
 .pagina-categorias,
 .secoes-personalizadas,
@@ -118,6 +131,20 @@
 
 .slider-modal img.ativo {
     opacity: 1;
+}
+
+/* Imagens da galeria são carregadas sob demanda pelo JavaScript. */
+.slider-modal img.imagem-slide {
+    background: var(--cor-superficie-hover);
+}
+
+.slider-modal img.imagem-slide.imagem-com-erro {
+    object-fit: contain;
+    padding: 24px;
+}
+
+.indicadores-modal img.miniatura-galeria[hidden] {
+    display: none !important;
 }
 
 /* ===== SETAS DE NAVEGAÇÃO ===== */
