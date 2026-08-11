@@ -320,7 +320,7 @@
         "tipo": "padrao",
         "tituloGaleriaPrincipal": "Fotos do Produto",
         "tituloGaleriaVariacao": "Fotos da Variação Selecionada",
-        "mensagemWhatsapp": "",
+        "mensagemWhatsapp": "Olá! Tenho interesse em um {produto} {opcao} (COD.{imagem})",
         "imagens": [
             {
                 "nome": "BL100",
@@ -553,7 +553,7 @@
         "tipo": "padrao",
         "tituloGaleriaPrincipal": "Fotos do Produto",
         "tituloGaleriaVariacao": "Fotos da Variação Selecionada",
-        "mensagemWhatsapp": "",
+        "mensagemWhatsapp": "Olá! Tenho interesse em um {produto} {opcao} (COD.{imagem})",
         "imagens": [
             {
                 "nome": "CA100",
@@ -782,7 +782,7 @@
         "tipo": "padrao",
         "tituloGaleriaPrincipal": "Fotos do Produto",
         "tituloGaleriaVariacao": "Fotos da Variação Selecionada",
-        "mensagemWhatsapp": "",
+        "mensagemWhatsapp": "Olá! Tenho interesse em uma {produto} {opcao} (COD.{imagem})",
         "imagens": [
             {
                 "nome": "CA101",
