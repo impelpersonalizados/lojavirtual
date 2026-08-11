@@ -210,6 +210,16 @@
                         "url": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785850143/produtos/miolocaderno-1785850142989.webp"
                     }
                 ]
+            },
+            {
+                "nome": "Agendamento Permanente A5 – 1DPP",
+                "preco": 103,
+                "imagens": [
+                    {
+                        "nome": "AG149",
+                        "url": "https://res.cloudinary.com/dzrshdovw/image/upload/v1786411746/produtos/whatsapp-image-2026-08-10-at-09-40-27-1786411745755.webp"
+                    }
+                ]
             }
         ],
         "ordem": 1,
@@ -273,7 +283,7 @@
                 "imagens": [
                     {
                         "nome": "AG109",
-                        "url": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785780662/produtos/images-1-1785780662215.webp"
+                        "url": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785850064/produtos/mioloagenda-1785850064593.webp"
                     }
                 ]
             },
@@ -283,7 +293,17 @@
                 "imagens": [
                     {
                         "nome": "AG110",
-                        "url": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785780682/produtos/001-c817ab1a3491ff9d3317227998468746-1024-1024-1785780681908.webp"
+                        "url": "https://res.cloudinary.com/dzrshdovw/image/upload/v1785850143/produtos/miolocaderno-1785850142989.webp"
+                    }
+                ]
+            },
+            {
+                "nome": "Agendamento Permanente A5 – 1DPP",
+                "preco": 103,
+                "imagens": [
+                    {
+                        "nome": "AG111",
+                        "url": "https://res.cloudinary.com/dzrshdovw/image/upload/v1786411746/produtos/whatsapp-image-2026-08-10-at-09-40-27-1786411745755.webp"
                     }
                 ]
             }
